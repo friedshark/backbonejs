@@ -1,0 +1,24 @@
+// Related Stories
+// -------------------------
+
+.related-articles {
+
+    padding: 0 rem($gutter);
+
+    @include respond-to-min('medium') {
+        padding: 0;
+    }
+        
+    &__heading {
+        text-align: center;
+        @include get-adjusted-layout-spacing(medium-connected, text--xlarge, padding-bottom);
+    }
+    
+    &__item {
+        @include get-layout-spacing(large-connected, margin-bottom);
+
+        &:last-child {
+            margin-bottom: 0;
+        }        
+    }
+}

@@ -1,0 +1,90 @@
+// Components - Our Offices
+// -------------------------
+
+.our-offices {
+
+	&__container {
+		padding-left: rem($gutter);
+		padding-right: rem($gutter);
+	}
+
+    &__heading {
+    	text-align: center;
+    	
+    	@include get-layout-spacing(large-connected, margin-bottom);
+    }
+
+	&__item {
+		display: block;
+		position: relative;
+		
+		@include get-layout-spacing(small, margin-bottom);
+
+		&-image {
+			display: block;
+			
+			@include get-layout-spacing(small-connected, margin-bottom);
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&-inner {
+			margin-left: 0;
+
+			@include respond-to-min('medium') {
+				margin-left: get-layout-spacing(large-connected, medium);	
+			}
+		}
+
+		&-title {
+			display: block;
+
+			@include get-layout-spacing(small-connected, margin-bottom);
+
+			&:after {
+				content: '';
+				width: rem(45px);
+				height: rem(1px);
+				background-color: colour(grey, lightest);
+				display: block;
+				position: relative;
+			}
+		}
+	}
+	
+	&__address {
+		font-style: normal;
+
+		@include get-layout-spacing(small-connected, margin-bottom);
+
+		&-line {
+			display: block;
+			clear:both;
+
+			&--spacer {
+
+				@include get-layout-spacing(small-connected, margin-bottom);
+			}
+		}
+	}
+
+	&__maplink,
+	&__email {
+		color: colour(orange);
+		text-decoration: none;
+	}
+
+	&__maplink {
+		display: block;
+
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&__tel {
+		color: colour(grey, base-font);
+		text-decoration: none;
+	}
+}

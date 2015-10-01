@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+ 	<meta charset="utf-8">
+
+    <title>amaze-website | {{ title }}</title>
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+
+    <link rel="canonical" href="" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/icon" />
+
+    <link href="/css/screen.css" rel="stylesheet" />
+
+    <script src="/js/modernizr-custom.js"></script>
+
+    <script>
+    	var dataLayer = [];
+    </script>
+
+</head>
+
+<body class="body--error">
+
+    <div id="site" class="site">
+
+		{{> _breadcrumb }}
+
+        <main class="error" role="main">
+
+            {{> body }}
+
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/../js/jquery.js">\x3C/script>')</script>
+
+    {{#if deploy}}
+    <script src="/../js/scripts.js"></script>
+    {{else}}
+    <script src="/../js/lib/bower/require.js" data-main="/../js/main-async"></script>
+    {{/if}}
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+
+<!-- 
+    NOTE: Is contained by the page level grid styles, i.e case study
+
+    So the width is determined by this, no grid included.
+-->
+
+<section class="related-articles" data-require="views/relatedArticlesCarouselView">
+    
+    <h1 class="related-articles__heading text--xlarge">Related content</h1>
+
+    <div class="related-articles__items related-articles__items--multiple grid">
+        <div class="related-articles__item grid__item medium--one-half large--one-half">
+            {{#if expanding-grid }}
+            {{#parseJSON '{"disable-triangle" : true}'}}
+            {{> _article-summary-related-article-item }}
+            {{/parseJSON}}
+            {{/if}}
+            {{#unless expanding-grid }}
+            {{> _article-summary-related-article-item }}
+            {{/unless}}
+        </div>
+        <div class="related-articles__item grid__item medium--one-half large--one-half">
+            {{#if expanding-grid }}
+            {{#parseJSON '{"disable-triangle" : true}'}}
+            {{> _article-summary-related-article-item }}
+            {{/parseJSON}}
+            {{/if}}
+            {{#unless expanding-grid }}
+            {{> _article-summary-related-article-item }}
+            {{/unless}}
+        </div>
+        <div class="related-articles__item grid__item medium--one-half large--one-half">
+            {{#if expanding-grid }}
+            {{#parseJSON '{"disable-triangle" : true}'}}
+            {{> _article-summary-related-article-item }}
+            {{/parseJSON}}
+            {{/if}}
+            {{#unless expanding-grid }}
+            {{> _article-summary-related-article-item }}
+            {{/unless}}
+        </div>
+        <div class="related-articles__item grid__item medium--one-half large--one-half">
+            {{#if expanding-grid }}
+            {{#parseJSON '{"disable-triangle" : true}'}}
+            {{> _article-summary-related-article-item }}
+            {{/parseJSON}}
+            {{/if}}
+            {{#unless expanding-grid }}
+            {{> _article-summary-related-article-item }}
+            {{/unless}}
+        </div>
+    </div>
+     
+</section>   

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>amaze-website | Form Contact Student</title>
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+
+    <link rel="canonical" href="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/icon" />
+
+    <link href="/css/screen.css" rel="stylesheet" media="screen" />
+    <link href="/css/print.css" rel="stylesheet" media="print" />
+
+    <script src="/js/modernizr-custom.js"></script>
+
+    <script>
+    	var dataLayer = [];
+    </script>
+
+</head>
+
+<body>
+
+    <div id="site" class="site" data-require="views/scrollTopView">
+
+        <main role="main" class="static">
+
+            <a class="static__back" href="../index.html">Back to Index</a>
+
+            <h1 class="static__heading text--xlarge">Form Contact Student</h1>
+
+            
+
+<form class="frm" method="post" enctype="multipart/form-data" action="/forms" data-require="controllers/formController" data-form="Student Research Form" novalidate>
+	<div class="site__max-element-width">
+		<div class="grid">
+			<div class="grid__item one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+				<fieldset id="step1" class="frm__step">
+					<legend class="frm__step-title">General Enquiry</legend>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="FullName">my name is</label>
+						<input class="frm__input" type="text" name="FullName" id="FullName" data-rule-required="true" placeholder="my name is" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="PhoneNumber">my phone number is</label>
+						<input class="frm__input" type="tel" name="PhoneNumber" id="PhoneNumber" data-rule-phone="true" data-rule-required="true" placeholder="my phone number is" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="Email">my email is</label>
+						<input class="frm__input" type="email" name="Email" id="Email" data-rule-required="true" data-rule-email="true" placeholder="my email is" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="Enquiry">enquiry</label>
+						<textarea class="frm__input" type="text" name="Enquiry" id="Enquiry" data-rule-required="true" placeholder="enquiry"></textarea>
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="CVFile">upload CV</label>
+						<div class="frm-file-wrap" data-require="views/fileView">
+							<input id="CVFile" type="file" name="CVFile" class="frm-file" extension="pdf,doc,docx" data-rule-required="true" />
+						</div>
+						<small class="frm__small">Word / PDF / Max size 10mb</small>
+					</div>
+
+					<button type="submit" class="btn btn--square btn--square-icon btn--icon"><span class="icon icon--arrow-right"></span>Get in touch</button>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/../js/jquery.js">\x3C/script>')</script>
+
+    
+    <script src="/js/lib/bower/require.js" data-main="/js/main-async"></script>
+    
+
+</body>
+
+</html>

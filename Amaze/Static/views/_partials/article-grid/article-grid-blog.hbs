@@ -1,0 +1,65 @@
+
+<section class="article-grid vsb--large" data-require="controllers/blogArticleGridController">
+
+	<div class="site__max-element-width">
+
+		<div class="grid">
+
+			<div class="grid__item one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+
+				<h1 class="article-grid__heading text--xxlarge">Blog</h1>
+
+				<div class="article-grid__content editorial">
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultricies purus sagittis tortor ultrices, quis auctor tellus finibus. Pellentesque finibus id purus quis efficitur.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div data-article-grid-form></div>
+
+		<div data-view="articleGridView">
+
+			<div class="article-grid__flex" data-article-grid
+				 data-article-grid-show-more-tags="{{articleGridBlogPage1.showMoreTags}}"
+				 data-article-grid-show-more-url="{{articleGridBlogPage1.showMoreUrl}}">
+
+				{{#each articleGridBlogPage1.items }}
+					{{> article-summary-blog-grid-item this }}
+				{{/each}}
+
+			</div>
+
+			<!-- NOTE: Don't show more than 5 pages at a time -->
+			<div class="pagination vst--small-connected article-grid__pagination" data-article-grid-pagination>
+				<span class="pagination__nav pagination__nav--prev"><span class="icon icon--arrow-left"></span>Previous</span>
+				<span class="pagination__page pagination__page--active"><span class="vh">Page</span> 1</span>
+				<a class="pagination__page link" href="article-grid-more-items.html?p=2"><span class="vh">Page</span> 2</a>
+				<a class="pagination__page link" href="article-grid-more-items.html?p=3"><span class="vh">Page</span> 3</a>
+				<a class="pagination__nav pagination__nav--next link" href="article-grid-more-items.html?p=2">Next<span class="icon icon--arrow-right"></span></a>
+			</div>
+
+		</div>
+
+		<script type="text/template" data-template="showMoreTemplate">
+			<div class="article-grid__show-more show-more vst--large-connected">
+				<a class="btn-wrap" href="">
+					<span class="btn btn--diamond"><span class="icon icon--more-content"></span></span>
+					<span class="btn-wrap__text">Show more<span class="vh"> news</span></span>
+				</a>
+			</div>
+		</script>
+
+		<script type="text/template" data-template="articleGridNoItemsFoundTemplate">
+			<div class="article">
+				<div class="editorial">
+					<h2>Oops! No news found</h2>
+					<p class="lead">We have no news for your selected filters, please try another combination...</p>
+				</div>
+			</div>
+		</script>
+
+	</div>
+
+</section>

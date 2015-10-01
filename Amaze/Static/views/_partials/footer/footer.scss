@@ -1,0 +1,147 @@
+// footer
+// -------------------------
+
+.footer {
+    color: colour(white);
+
+
+    // Elements
+
+    &__main {
+        padding: get-layout-spacing(small, small) rem($gutter);
+        position: relative;
+        background-color: colour(blue);
+
+        @include trixel-background;
+
+        .site__max-element-width {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__section {
+
+        @include get-layout-spacing(large-connected, margin-bottom);
+
+        @include respond-to-min('large') {
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__base {
+        padding: rem($gutter);
+        background-color: colour(blue-black);
+    }
+
+    &__heading {
+        margin-bottom: get-layout-spacing(small-connected, small);
+    }
+
+    &__address {
+        font-style: normal;
+        @include get-layout-spacing(small-connected, margin-bottom);
+    }
+
+    &__links {
+        float: left;
+        margin: 0;
+        list-style: none;
+
+        @include respond-to-min('large') {
+
+            &--secondary {
+                margin-top: get-layout-spacing(small-connected, medium);
+            }
+        }
+    }
+
+    &__tweet {
+
+        &-via {
+            margin-top: get-layout-spacing(small-connected, small);
+            display: block;
+            color: colour(grey, lighter);
+        }
+    }
+
+    &__amaze-stives {
+        margin-top: rem(6px);
+    }
+
+    &__copyright {
+        margin-right: rem($gutter);
+        display: inline-block;
+    }
+
+    &__st-ives-group-logo {
+        display: inline-block;
+        width: rem(100px);
+        height: rem(18px);
+        float: right;
+        background-image: url(/img/st-ives-logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include respond-to-min(medium) {
+            position: relative;
+            top: rem(6px); // Alignment with copyright
+            width: rem(115px);
+            float: none;
+        }
+
+        @include respond-to-min(large) {
+            width: rem(125px);
+        }
+    }
+
+    &__social-media {
+
+        margin: rem($gutter 0 -8px 0);
+        padding-top: rem($gutter);
+        padding-left: 0;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        list-style: none;
+        border-top: 1px solid colour(grey, footer-social-divide);
+
+        @include respond-to-min(medium) {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+            float: right;
+            text-align: right;
+        }
+
+        &-item {
+
+            a {
+                color: colour(white);
+                span {
+                    font-size: rem(30px);
+                }
+            }
+
+            @include respond-to-min(medium) {
+                margin-left: rem($gutter);
+            }
+
+            // specific size for youtube logo
+
+            &--youtube {
+                a {
+                    span {
+                        font-size: rem(40px);
+                    }
+                }
+            }
+        }
+    }
+}

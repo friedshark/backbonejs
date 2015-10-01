@@ -1,0 +1,60 @@
+// Components - Logo grid
+// -------------------------
+
+.logo-grid {
+
+	&__container {
+		display: block;
+	}
+
+	&__link {
+		display: block;
+		position: relative;
+
+		&:after {
+			background-color: colour(orange);
+			bottom: 0;
+			content: '';
+			height: 1px;
+			left: 50%;
+			opacity: 0;
+			transform: translate(-50%, rem(30px));
+			transition: opacity map-get($transitions, navigation-links), transform map-get($transitions, navigation-links);
+			width: 60%;
+			position: absolute;
+		}
+
+		@include active {
+
+			&:after {
+				transform: translate(-50%, 0);
+				opacity: 1;
+			}
+		}
+	}
+
+	&__description{
+		text-align: center;
+		padding: rem(0 $gutter);
+
+		@include respond-to-min(medium){
+			padding: 0;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+		width: 100%;
+    	text-align: center;
+
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&__logos {
+		display: inline-block;
+		position: relative;
+		width: 50%;
+		vertical-align: middle;
+	}
+}

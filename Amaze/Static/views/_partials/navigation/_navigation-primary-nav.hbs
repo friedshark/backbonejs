@@ -1,0 +1,31 @@
+
+<nav id="navigation" class="navigation" role="navigation" data-view="navigationView">
+
+    <div class="navigation__skew" data-navigation-height data-navigation-close></div>
+
+    <div class="navigation__inner">
+
+        <div class="navigation__scroll" data-navigation-height data-navigation-scroll>
+
+            <button class="navigation__close" data-navigation-close>
+                <span class="icon icon--close"><span class="vh">Close</span></span>
+            </button>
+
+            <ul class="navigation__items navigation__items--pnav">
+                {{#each navigation.items }}
+                {{> _navigation-primary-nav-item this }}
+                {{/each}}
+                <li class="navigation__item navigation__item--pnav navigation__item--search" tabindex="0">
+                    <a data-view="searchOverlayTriggerView" class="navigation__item-link navigation__item-link--pnav" href="/static/compiled/pages/search-results.html" tabindex="-1">
+                        <span class="navigation__item-text navigation__item-text--pnav navigation__item-text--line">
+                            Search
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>

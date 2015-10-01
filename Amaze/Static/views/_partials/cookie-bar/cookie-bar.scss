@@ -1,0 +1,79 @@
+// Cookie-bar
+// -------------------------
+
+.cookie-bar {
+	color: colour(white);
+	@include linear-gradient(to right, #f18017 0%, #d76c4c 100%);
+
+	&__inner {      
+        padding-left: rem($gutter);
+        padding-right: rem($gutter);
+        @include get-layout-spacing(small-connected, padding-top, padding-bottom); 
+	}
+
+    &__statement {
+		display: block;
+		text-align: center;
+		min-height: rem(51px);
+
+		@include respond-to-min('medium') {
+			padding-top: rem(25px);
+			padding-left: rem(60px);
+			position: relative;
+			display: inline-block;
+		}
+
+		&-btn {
+			position: relative;
+			display: inline-block;
+			white-space: nowrap;
+				width: rem(35px);
+				height: rem(35px);
+
+            @include respond-to-min('medium') {
+                position: absolute;
+				top: rem(7px);
+				left: rem(7px);
+				width: rem(35px);
+				height: rem(35px);
+				overflow: hidden;
+            }
+		}
+
+		&-text {
+			display: block;
+			text-align: center;
+			margin-top: rem($gutter);
+			top: 0;
+			transform: translateY(0);
+			position: relative;
+			@include respond-to-min('medium') {
+				position: relative;
+				margin-top: -10px;
+				display: block;
+				text-align: left;
+				top: 50%;
+			}
+			a {
+
+				@include link-base;
+				@include link-brand;
+				text-decoration: underline;
+			}
+		}
+
+		&-title {
+			@include type-size(text--xlarge);
+		}
+	}
+
+
+    &__agree-btn {
+		display: block;
+		margin: rem($gutter) auto 0 auto;
+		@include respond-to-min('medium') {
+			float: right;
+			margin: 0;
+		}
+	}
+}

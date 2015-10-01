@@ -1,0 +1,76 @@
+<form class="article-grid__form vsb--large-connected filter-view" data-view="filterView" data-baseurl="/blog" autocomplete="off">
+
+	<fieldset class="filter-view__fieldset">
+		<legend class="filter-view__legend vh">Filter blog</legend>
+		<div class="filter-view__option">
+			<div data-view="selectView" data-filter="categories" class="frm-select-wrap">
+				<label for="blogs-by-categories" class="vh">By Category:</label>
+				<select id="blogs-by-categories" name="blogs-by-categories" class="frm-select">
+					<option value="">All Categories</option>
+					<option value="Advertising">Advertising</option>
+					<option value="Analytics">Analytics</option>
+					<option value="Big Data">Big Data</option>
+					<option value="Commerce">Commerce</option>
+					<option value="Content">Content</option>
+					<option value="Creative">Creative</option>
+					<option value="CRM">CRM</option>
+					<option value="Digital Marketing">Digital Marketing</option>
+					<option value="Commerce">Commerce</option>
+					<option value="Email">Email</option>
+					<option value="Google">Google</option>
+					<option value="Human Behaviour">Human Behaviour</option>
+					<option value="Innovation">Innovation</option>
+					<option value="Mobile">Mobile</option>
+					<option value="PPC">PPC</option>
+					<option value="PR">PR</option>
+					<option value="Search">Search</option>
+					<option value="Social Media">Social Media</option>
+					<option value="Strategy">Strategy</option>
+					<option value="Technology">Technology</option>
+					<option value="Uncategorized">Uncategorized</option>
+					<option value="User Experience">User Experience</option>
+				</select>
+				<span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+			</div>
+		</div>
+		<span class="filter-view__ampersand filter-view__ampersand--article-grid content-ampersand text--large"></span>
+		<div class="filter-view__option">
+			<div data-view="selectView" data-filter="year" class="frm-select-wrap">
+				<label for="blogs-by-year" class="vh">By Type:</label>
+				<select id="blogs-by-year" name="blogs-by-year" class="frm-select">
+					<option value="">All Years</option>
+					<option value="2015">2015</option>
+					<option value="2014">2014</option>
+					<option value="2013">2013</option>
+				</select>
+				<span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+			</div>
+		</div>
+		<span class="filter-view__ampersand filter-view__ampersand--article-grid content-ampersand text--large"></span>
+		<div class="filter-view__option">
+			<div data-view="selectView" data-filter="month" class="frm-select-wrap">
+				<label for="blogs-by-month" class="vh">By Service:</label>
+				<select id="blogs-by-month" name="blogs-by-month" class="frm-select">
+					<option value="">All Months</option>
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+			</div>
+		</div>
+
+		<input class="filter-view__submit btn btn--square" type="submit" value="Filter news" data-filter-auto-submit />
+
+	</fieldset>
+
+</form>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>amaze-website | Form Application Graduate</title>
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+
+    <link rel="canonical" href="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/icon" />
+
+    <link href="/css/screen.css" rel="stylesheet" media="screen" />
+    <link href="/css/print.css" rel="stylesheet" media="print" />
+
+    <script src="/js/modernizr-custom.js"></script>
+
+    <script>
+    	var dataLayer = [];
+    </script>
+
+</head>
+
+<body>
+
+    <div id="site" class="site" data-require="views/scrollTopView">
+
+        <main role="main" class="static">
+
+            <a class="static__back" href="../index.html">Back to Index</a>
+
+            <h1 class="static__heading text--xlarge">Form Application Graduate</h1>
+
+            
+
+<form class="frm" method="post" enctype="multipart/form-data" action="/forms" data-require="controllers/formController" data-form="Graduate Careers Form" novalidate>
+	<div class="site__max-element-width">
+		<div class="grid">
+			<div class="grid__item one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+				<fieldset id="step1" class="frm__step">
+					<legend class="frm__step-title">Eligibility</legend>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm-checkbox" for="ConfirmCompletion">
+							<input type="checkbox" class="frm-checkbox__input vh" name="ConfirmCompletion" id="ConfirmCompletion" value="true" data-rule-required="true" />
+							<span class="frm-checkbox__tick icon icon--unchecked"></span>
+							I confirm that I will have completed my university degree by July 2015
+						</label>
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm-checkbox" for="ConfirmStart">
+							<input type="checkbox" class="frm-checkbox__input vh" name="ConfirmStart" id="ConfirmStart" value="true" data-rule-required="true" />
+							<span class="frm-checkbox__tick icon icon--unchecked"></span>
+							I confirm that I'll be able to work from the 1 September 2015
+						</label>
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="CanWorkInUK">eligible to work in the UK</label>
+						<div class="frm__field-group">
+							<label class="frm-checkbox">
+								<input name="CanWorkInUK" type="radio" value="True" class="frm-checkbox__input vh" data-rule-required="true" data-rule-pattern="True" data-msg-pattern="We currently can't accept non - UK residents." />
+								<span class="frm-checkbox__radio-tick">
+									<span class="frm-checkbox__radio-tick-checked"></span>
+								</span>
+								yes
+							</label>
+							<label class="frm-checkbox">
+								<input name="CanWorkInUK" type="radio" value="False" class="frm-checkbox__input vh" data-rule-required="true" data-rule-pattern="True" data-msg-pattern="We currently can't accept non - UK residents." />
+								<span class="frm-checkbox__radio-tick">
+									<span class="frm-checkbox__radio-tick-checked"></span>
+								</span>
+								no
+							</label>
+						</div>
+					</div>
+
+				</fieldset>
+
+				<fieldset id="step2" class="frm__step">
+					<legend class="frm__step-title">About you</legend>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="FirstName">first name</label>
+						<input id="FirstName" name="FirstName" class="frm__input" placeholder="first name" data-rule-required="true" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="LastName">last name</label>
+						<input id="LastName" name="LastName" class="frm__input" placeholder="last name" data-rule-required="true" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="Email">email</label>
+						<input id="Email" name="Email" type="email" class="frm__input" placeholder="email" data-rule-required="true" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="Phone">phone</label>
+						<input id="Phone" type="tel" name="Phone" class="frm__input" data-rule-phone="true" placeholder="phone" data-rule-required="true" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="Mobile">mobile</label>
+						<input id="Mobile" type="tel" name="Mobile" class="frm__input" data-rule-phone="true" placeholder="mobile" data-rule-required="true" />
+					</div>
+
+				</fieldset>
+
+				<fieldset id="step3" class="frm__step">
+					<legend class="frm__step-title">Your CV</legend>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="NameUniversity">name of your university</label>
+						<input id="NameUniversity" name="NameUniversity" class="frm__input" placeholder="name of your university" data-rule-required="true"/>
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="InterestedArea">which areas are you interested in working</label>
+						<textarea id="InterestedArea" name="InterestedArea" type="text" class="frm__input "
+								  placeholder="which areas are you interested in working" data-rule-required="true" data-rule-maxlength="250"></textarea>
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="YoutubeUrl">YouTube link</label>
+						<input id="YoutubeUrl" type="url" name="YoutubeUrl" class="frm__input" placeholder="YouTube link" data-rule-required="true" />
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="CVFile">upload CV</label>
+						<div class="frm-file-wrap" data-require="views/fileView">
+							<input id="CVFile" type="file" name="CVFile" class="frm-file" extension="pdf,doc,docx" data-rule-required="true" />
+						</div>
+						<small class="frm__small">Word / PDF / Max size 10mb</small>
+					</div>
+
+					<div class="frm__item" data-form-item>
+						<label class="frm__label" for="PortfolioUrl">link to my portfolio</label>
+						<input id="PortfolioUrl" type="url" name="PortfolioUrl" class="frm__input" placeholder="link to my portfolio" data-rule-required="true" />
+					</div>
+
+					<button type="submit" class="btn btn--square btn--square-icon btn--icon"><span class="icon icon--arrow-right"></span>Submit application</button>
+
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+        </main>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/../js/jquery.js">\x3C/script>')</script>
+
+    
+    <script src="/js/lib/bower/require.js" data-main="/js/main-async"></script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+{
+    "items": [
+        {
+            "type": "News Article",
+            "id": "1",
+            "title": "News Article 1",
+            "date": "18 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 123,
+            "showComments": true,
+            "views": 1234,
+            "showViews": true
+        },
+        {
+            "type": "Case Study",
+            "id": "2",
+            "title": "Case Study 2",
+            "date": "05 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 1,
+            "showComments": true,
+            "views": 100,
+            "showViews": true
+        },
+        {
+            "type": "Blog Article",
+            "id": "3",
+            "title": "Blog Article 3",
+            "date": "18 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 1234,
+            "showComments": true,
+            "views": 10000,
+            "showViews": true
+        },
+        {
+            "type": "News Article",
+            "id": "4",
+            "title": "News Article 4",
+            "date": "05 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 0,
+            "showComments": false,
+            "views": 100,
+            "showViews": false
+        },
+        {
+            "type": "News Article",
+            "id": "5",
+            "title": "News Article 5",
+            "date": "27 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 1,
+            "showComments": true,
+            "views": 100,
+            "showViews": true
+        },
+        {
+            "type": "News Article",
+            "id": "6",
+            "title": "News Article 6",
+            "date": "27 February 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 1,
+            "showComments": false,
+            "views": 100,
+            "showViews": false
+        }
+    ]
+}

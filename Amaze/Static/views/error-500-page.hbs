@@ -1,0 +1,37 @@
+---
+title: "Error 500"
+layout: error-page.hbs
+---
+
+<div class="error">
+
+	<div class="site__max-element-width">
+
+	    <!-- NOTE: This avatar_error_XX.png will be a random number 1 to 10 generated server side -->
+		<div class="error__bg">
+
+			<picture>
+			    <source media="(min-width: 40rem)" srcset="/img/error-page/avatar01.png" />
+			    <img src="/img/error-page/avatar01-1000.png" alt="Amaze brandmark avatar" class="error__bg-image" />
+			</picture>
+
+			<img src="/img/amaze-logo.svg" alt="Amaze Logo" class="error__bg-logo" />
+
+		</div>
+
+		<article class="error__container">
+
+            <div class="error__message editorial text--large">
+                <!-- NOTE: Page title -->
+                <h1 class="error__message-heading">Error...500</h1>
+
+                <!-- NOTE: Richtext content -->
+                <p>The page you were looking for appears to have been moved, deleted or does not exist. You could go back to where you were or head straight to our <a href="#" class="link">home page</a></p>
+                <!-- End -->
+            </div>
+
+		</article>
+
+	</div>
+
+</div>

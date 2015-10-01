@@ -1,0 +1,100 @@
+// Components - Infographics-block
+// -------------------------
+
+.infographic {
+	padding: 0 rem($gutter);
+    color: colour(grey, body-font);
+
+	&__container{
+		display: block;
+
+		@include get-layout-spacing(large-connected, margin-bottom);
+
+		&-heading {
+			text-align: center;
+			@include get-layout-spacing(small-connected, margin-bottom);
+		}
+
+		&-summary{
+			text-align: center;
+		}
+	}
+
+	&__item {
+		text-align: center;
+		position: relative;
+		padding: 0;
+
+		@include get-layout-spacing(large-connected, margin-bottom);
+
+		@include respond-to-min(medium) {
+			padding: 0 15%;
+		}
+	}
+
+	&__graphic {
+		width: rem(140px);
+		height: rem(160px);
+
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&__heading {
+		position: relative;
+		display: block;
+        color: colour(orange);
+        @include get-adjusted-layout-spacing(small-connected, text--xlarge, margin-bottom);
+
+        &-link {
+        	@include link-base;
+        	@include link-alt;
+        }
+	}
+
+	&__text {
+		@include get-layout-spacing(small-connected, margin-bottom);
+        color: colour(grey, body-font);
+	}
+
+	&__link {
+		@include link-base;
+		@include link-alt;
+	}
+
+	&--brand,
+	&--dark	{
+		color: colour(white);
+	}
+
+	&--brand &,
+	&--dark & {
+
+
+		&__heading {
+			color: colour(white);
+		}
+
+		&__text {
+			color: colour(white);
+
+			a {
+				color: colour(white);
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&--brand & {
+
+		&__link, &__heading-link {
+			@include link-brand;
+		}
+	}
+
+	&--dark & {
+
+		&__link, &__heading-link {
+			@include link-dark;
+		}
+	}
+}

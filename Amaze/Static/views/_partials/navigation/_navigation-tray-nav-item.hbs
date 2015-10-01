@@ -1,0 +1,32 @@
+
+<li class="nav-tray__p-nav-item{{#if children }}{{/if}}">
+    <a class="nav-tray__p-nav-link{{#if children }} nav-tray__p-nav-link--children{{/if}}" href="{{ link }}">
+        <span class="nav-tray__p-nav-text">{{ title }}</span>
+        {{#if children }}
+        <span class="icon icon--arrow-down"></span>
+        {{/if}}
+    </a>
+
+    {{#if children}}
+    <div class="nav-tray__s-nav">
+
+        <div class="nav-tray__s-nav-inner">
+
+            <a href="#" class="nav-tray__close vs--large-connected"><span class="icon icon--close"><span class="vh">Close</span></span></a>
+
+            <a href="#" class="nav-tray__s-nav-title link text--xlarge">{{ title }}</a>
+
+            <a href="#" class="nav-tray__back">Back</a>
+
+            <ul class="nav-tray__p-nav">
+                {{#each children }}
+                {{> _navigation-tray-nav-item this }}
+                {{/each}}
+            </ul>
+
+        </div>
+
+    </div>
+    {{/if}}
+
+</li>

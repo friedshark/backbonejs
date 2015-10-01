@@ -1,0 +1,71 @@
+{
+    "items": [
+        {
+            "title": "About",
+            "link": "/",
+            "current": true
+        },
+        {
+            "title": "Work",
+            "link": "/"
+        },
+        {
+            "title": "Services",
+            "link": "/",
+            "current": true,
+            "children": [
+                {
+                    "title": "Strategy and Innovation",
+                    "link": "/"
+                },
+                {
+                    "title": "Digital Experience & Design",
+                    "link": "/",
+                    "current": true
+                },
+                {
+                    "title": "Commerce & Technology",
+                    "link": "/"
+                },
+                {
+                    "title": "Global Design and Build",
+                    "link": "/"
+                },
+                {
+                    "title": "Integrated Communications",
+                    "link": "/"
+                },
+                {
+                    "title": "Digital Operations Services",
+                    "link": "/"
+                },
+                {
+                    "title": "Data Intelligence",
+                    "link": "/"
+                },
+                {
+                    "title": "Strategic Alliances",
+                    "link": "/"
+                }
+            ]
+        },
+        {
+            "title": "Careers",
+            "link": "/static/compiled/pages/careers-landing-page.html",
+            "children": [
+                {
+                    "title": "Graduate Programme",
+                    "link": "/"
+                }
+            ]
+        },
+        {
+            "title": "News",
+            "link": "/static/compiled/pages/news-landing-page.html"
+        },
+        {
+            "title": "Contact",
+            "link": "/static/compiled/pages/contact-page.html"
+        }
+    ]
+}

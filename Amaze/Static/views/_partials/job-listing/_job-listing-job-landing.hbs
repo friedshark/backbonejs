@@ -1,0 +1,55 @@
+
+<section class="job-listing vsb--large" data-require="controllers/jobListingController">
+
+    <div class="site__max-element-width">
+
+        <div class="grid">
+
+            <div class="grid__item small--one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+
+                <article class="vsb--large-connected">
+
+                    <div class="editorial">
+                        <h2>Join our team</h2>
+                        <p class="lead">We are always looking for the best talent to join the Amaze family. We are now accepting <a href="#" class="link">graduate applications.</a></p>
+                        <p>Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+                    </div>
+
+                </article>
+
+                {{> _filter-form }}
+
+                <div class="job-listing__items" data-view="jobListingView">
+
+                    {{#each jobListings.items }}
+
+                        {{> job-listing-item this }}
+
+                    {{/each}}
+
+                </div>
+
+                <script type="text/template" data-view="jobListingNoVacanciesTemplate">
+
+                    <div class="article">
+                        <div class="editorial">
+                            <h2>Oops! No vacancies found</h2>
+                            <p class="lead">Cant find the job your after? We are always on the look out for the best people.</p>
+
+                            <div class="article__cta">
+								<a href="#" type="button" class="btn btn--square btn--square-icon btn--icon">
+									<span class="icon icon--arrow-right"></span>
+									Send us your CV
+								</a>
+	                        </div>
+                        </div>
+                    </div>
+
+                </script>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

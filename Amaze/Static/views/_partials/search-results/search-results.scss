@@ -1,0 +1,251 @@
+// Components - Search results
+// -------------------------
+
+.search-results {
+
+	padding-left: rem($gutter);
+	padding-right: rem($gutter);
+
+	@mixin containing-space{
+		position: relative;
+	}
+
+	&__heading {
+		text-align: center;
+		@include get-layout-spacing(large-connected, margin-bottom);
+	}
+
+	&__searchbox {
+		@include get-layout-spacing(small, margin-bottom);
+
+		&-label {
+			display: block;
+			text-transform: uppercase;
+		}
+
+		&-input {
+			@include responsive-type-size(text--xlarge);
+			border: 0;
+			border-left: 1px solid colour(orange);
+			display: inline-block;
+			margin-bottom: rem(20px);
+			padding: rem(0 10px);
+			vertical-align: middle;
+			width: 100%;
+			border-radius: 0;
+
+			@include respond-to-min(medium) {
+				margin-bottom: 0;
+			}
+		}
+
+		&-submit {
+			width: 100%;
+		}
+	}
+
+	&__inner {
+		@include containing-space;
+
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__categories {
+		display: block;
+		position: relative;
+	}
+	&__categories-inner {
+		list-style-type: none;
+		padding-left: 0;
+		display: block;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		@include respond-to-min(medium) {
+			// fixing inherited letter-spacing, and margin
+			letter-spacing: -0.31em;
+			margin-left: -20px;
+			margin-bottom: rem(50px);
+		}
+	}
+
+	&__categories-item {
+		display: inline-block;
+		padding-bottom: rem($gutter);
+		width: 100%;
+
+		@include respond-to-min(medium) {
+			width: 33.333%;
+			letter-spacing: 0;
+			padding-left: rem($gutter);
+		}
+
+	}
+
+	&__category {
+		display: block;
+		list-style-type: none;
+
+		@include containing-space;
+
+		@include respond-to-min(medium) {
+			padding-bottom: rem(50px);
+		}
+
+		&:last-child {
+
+			&:after {
+				display: none;
+			}
+		}
+
+		&-heading {
+			margin-bottom: rem($gutter);
+		}
+
+		&-title {
+			color: colour(grey, base-font);
+			display: block;
+			text-transform: uppercase;
+
+			@include respond-to-min(medium) {
+				display: inline-block;
+				margin: 0;
+			}
+		}
+
+		&-link {
+			text-transform: uppercase;
+			display: inline-block;
+
+			@include respond-to-min(medium) {
+				float: right;
+			}
+		}
+
+		&-item {
+			display: block;
+			@include get-layout-spacing(large-connected, margin-bottom);
+		}
+
+		&-url {
+			padding-bottom: rem($gutter);
+			display: block;
+			width: 99%;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			color: colour(grey, lighter);
+
+			a{
+				color: colour(grey, lighter);
+			}
+		}
+
+		&-viewall {
+			@include respond-to-min(medium) {
+				float: right;
+			}
+		}
+	}
+
+	&__no-results {
+		text-align: center;
+		@include get-layout-spacing(large-connected, margin-bottom);
+
+		&-heading {
+			color: colour(orange);
+		}
+	}
+}
+
+
+.searchoverlay {
+	padding-top: rem(75px); //hardcoded because of adjusted layout height values
+	background: colour(white);
+	display: none;
+	height: 100%;
+	left: 0;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	-webkit-overflow-scrolling: touch;
+
+	@include respond-to-min(medium) {
+		padding-top: rem(150px); //hardcoded because of adjusted layout height values
+	}
+
+	&__searchbox {
+		@include get-layout-spacing(large-connected, margin-bottom);
+	}
+
+	&--visible {
+		display: block;
+	}
+
+	&__close {
+		background: none;
+		border: 0;
+		height: 18px;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		text-indent: 99px;
+		top: rem(-40px);
+		width: 18px;
+
+		&:before,
+		&:after {
+			background: #000;
+			content: '';
+			height: 1px;
+			left: -50%;
+			position: absolute;
+			top: 50%;
+			width: 200%;
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+
+		@include respond-to-min(medium) {
+			top: rem(-100px);
+		}
+	}
+
+	&__heading {
+		display: none;
+	}
+
+	&__label {
+		text-transform: uppercase;
+	}
+
+	&__textbox {
+		@include get-layout-spacing(small, margin-bottom);
+	}
+
+	&__result {
+		opacity: 1;
+		transition: opacity 0.8s ease;
+
+		&--invisible {
+			opacity: 0;
+		}
+
+		&--noresults {
+			text-align: left;
+		}
+	}
+}

@@ -1,0 +1,132 @@
+{
+    "showMoreTags": "News,Blog,Global Design and Build,2014,2015",
+    "showMoreUrl":  "/static/data/articleGridNewsPage2.json?exclude={exclude}&types={types}&services={services}&year={year}",
+    "items": [
+        {
+            "type": "News Article",
+            "id": "1",
+            "title": "News Article 1",
+            "date": "18 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 123,
+            "showComments": true,
+            "views": 1234,
+            "showViews": true,
+            "types": [ "Amaze generation", "News" ],
+            "services": [ "Strategy & Innovation" ],
+            "year": 2015,
+            "display": "full"
+        },
+        {
+            "type": "Case Study",
+            "id": "2",
+            "title": "Case Study 2",
+            "date": "05 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 1,
+            "showComments": true,
+            "views": 100,
+            "showViews": true,
+            "types": [ "News" ],
+            "services": [ "Strategy & Innovation" ],
+            "year": 2015,
+            "display": "half"
+        },
+        {
+            "type": "Tweet",
+            "theme": "radial-gradient--dark-1 trixel--light",
+            "id": "2001",
+            "display": "half",
+            "tweets": [
+	            {
+	                "tweet": "RT: <a href=\"#\" class=\"link\">@jasperbelluk</a> Decisions decisions - good overview of attribution model fit to retailer <a href=\"#\" class=\"link\">@amazeltd</a> <a href=\"#\" class=\"link\">#shoporg14</a> <a href=\"#\" class=\"link\">#analyticshero</a>",
+	                "via": "30mins ago via twitter",
+	                "retweets": 4,
+	                "favourites": 2
+	            },
+	            {
+	                "tweet": "W  W  W  W  W  W  W  W  W  W  <a href=\"#\" class=\"link\">W  W  W  W  W  W  W  W  W  W  </a>W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  ",
+	                "via": "55mins ago via twitter",
+	                "retweets": 0,
+	                "favourites": 0
+	            }
+	        ]
+        },
+        {
+            "type": "News Article",
+            "id": "4",
+            "title": "News Article 4",
+            "date": "05 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 0,
+            "showComments": false,
+            "views": 100,
+            "showViews": false,
+            "types": [ "News" ],
+            "services": [ "Global Design and Build" ],
+            "year": 2015,
+            "display": "full"
+        },
+        {
+            "type": "Tweet",
+            "theme": "radial-gradient--brand-2 trixel--light",
+            "id": "2002",
+            "display": "half",
+			"tweets": [
+	            {
+	                "tweet": "W  W  W  W  W  W  W  W  W  W  <a href=\"#\" class=\"link\">W  W  W  W  W  W  W  W  W  W  </a>W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  ",
+	                "via": "55mins ago via twitter",
+	                "retweets": 0,
+	                "favourites": 0
+	            }
+	        ]
+        },
+        {
+            "type": "News Article",
+            "id": "6",
+            "title": "News Article 6",
+            "date": "27 February 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 1,
+            "showComments": false,
+            "views": 100,
+            "showViews": false,
+            "types": [ "Blog" ],
+            "services": [ "Commerce & Technology" ],
+            "year": 2015,
+            "display": "half"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+---
+title: "Form Application Selector"
+---
+
+<section class="frm-selector vsb--large" data-require="views/formSelectorView">
+	<div class="site__max-element-width">
+	    <div class="grid">
+	        <div class="grid__item one-whole">
+                <a href="form-application-standard.html" data-toggle class="frm-selector__anchor">
+	                <h1 class="frm-selector__title">Do you think you have what we're after? <span class="frm-selector__link">Apply now</span></h1>
+				</a>
+				<div class="frm-selector__expander" data-expander>
+					<div class="frm-selector__content" data-content></div>
+				</div>
+	        </div>
+	    </div>
+    </div>
+
+    <script id="template-close-form" type="text/x-handlebars-template">
+		<h1 class="text--xlarge frm-selector__title">Changed your mind already? <span class="frm-selector__link">Close application</span></h1>
+	</script>
+
+	<script id="template-complete-form" type="text/x-handlebars-template">
+		<div class="grid grid--center">
+			<div class="grid__item one-whole medium--six-eighths large--eight-twelfths">
+				<div class="editorial">
+					<h1 class="text--xxlarge frm-selector__title">Thanks \{{name}}</h1>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script id="template-error-form" type="text/x-handlebars-template">
+		<div class="grid grid--center">
+			<div class="grid__item one-whole medium--six-eighths large--eight-twelfths">
+				<div class="editorial">
+					<h1 class="text--xxlarge frm-selector__title">Oops</h1>
+				</div>
+			</div>
+		</div>
+	</script>
+
+</section>
+
+
+

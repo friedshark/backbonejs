@@ -1,0 +1,441 @@
+{
+    "contentItems": [{
+        "year": "1995",
+        "events": [{
+            "uid": 1,
+            "yearID": 0,
+            "year": "1995",
+            "month": "",
+            "title": "Founded by Peter Fowler & Roy Stringer",
+            "x": "1",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Amaze is established out of the Learning Methods Unit of John Moores University, Liverpool. Founded by the late digital media luminary Roy Stringer, and led by him and Peter Fowler, the unit is formed to explore the effects of digital and emerging new media on the way people learn and communicate."]
+        }, {
+            "uid": 2,
+            "yearID": 0,
+            "year": "1995",
+            "month": "",
+            "title": "Roy Stringer created the Navihedron",
+            "x": "1",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Roy Stringer develops the Navihedron - a non-hierarchical information architecture tool designed to allow navigation of the network space. Designed as a movable polyhedron, there are twelve nodes, each of which opens onto twelve more, presenting complex information in a logical way."]
+        }]
+    }, {
+        "year": "1997",
+        "events": [{
+            "uid": 3,
+            "yearID": 0,
+            "year": "1997",
+            "month": "",
+            "title": "MTV 3D Movie Mixer",
+            "x": "2",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["MTV approach Amaze in search of something that would make their site 'stand out'. Danny Brown's technical sophistication and general love for exploration leads us to The MTV Music Mixer. An interactive 3D music experience built with the Navihedron system, it allows users to mix sound samples by placing them in a three dimensional space."]
+        }]
+    }, {
+        "year": "1998",
+        "events": [{
+            "uid": 4,
+            "yearID": 0,
+            "year": "1998",
+            "month": "",
+            "title": "Noodlebox",
+            "x": "2",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Daniel Brown develops 'The Noodlebox' - a revolutionary digital experiment, which features a landscape of building blocks inspired by 1980s computer games. Noodlebox receives global recognition and becomes a permanent installation in the San Francisco Museum of Modern Art. Sparking extensive debate, the immersive, holistic experience strongly reflects the thinking behind our early work."]
+        }]
+    }, {
+        "year": "2000",
+        "events": [{
+            "uid": 5,
+            "yearID": 0,
+            "year": "2000",
+            "month": "",
+            "title": "Oxford Guide to Microanalysis",
+            "x": "3",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "oxford.svg",
+            "text": ["A rich multi-media campaign comprising three CD-ROMs that help train operators of complex equipment in the principles of microanalysis. Taking ten months to complete, it receives a number of awards including BIMA's Gold Award, Multimedia Published Training category."]
+        }]
+    }, {
+        "year": "1999",
+        "events": [{
+            "uid": 6,
+            "yearID": 0,
+            "year": "1999",
+            "month": "",
+            "title": "VW Zoon",
+            "x": "3",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "vw.svg",
+            "text": ["Amaze's first online community built for VW. Aimed at the German youth market, it quickly becomes the second largest youth site in Germany. Amaze pioneers social networking tools for its delivery, as well as producing interactive and editorial content."]
+        }]
+    }, {
+        "year": "2002",
+        "events": [{
+            "uid": 7,
+            "yearID": 0,
+            "year": "2002",
+            "month": "",
+            "title": "The Co-operative Group",
+            "x": "4",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "co-op.svg",
+            "text": ["Amaze is commissioned by The Co-operative to look after multiple businesses across the Group, defining and evolving their digital channel proposition. Our role now includes digital and technical strategy, website design and build, social media strategy, digital campaign planning and implementation and on-going content management support."]
+        }]
+    }, {
+        "year": "2003",
+        "events": [{
+            "uid": 8,
+            "yearID": 0,
+            "year": "2003",
+            "month": "",
+            "title": "Toyota",
+            "x": "4",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "toyota.svg",
+            "text": ["Amaze first begins working with Toyota. As European digital partner, this is one of the agency's first pan-continental projects, requiring strategy, brand, creative and rich multilingual solutions across 46 European markets. Our omni-channel approach provides a seamless online to offline experience, and an ongoing optimisation programme to maximise website conversion."]
+        }, {
+            "uid": 9,
+            "yearID": 0,
+            "year": "2003",
+            "month": "",
+            "title": "ODEON",
+            "x": "5",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "odeon.svg",
+            "text": ["Amaze becomes ODEON's online strategic partner, delivering results-driven digital marketing from brand campaigns and increasing traffic through to social media tools and customer relationship management. Amaze are subsequently commissioned to develop their website, the first step in establishing a connected digital ecosystem for the ODEON brand."]
+        }]
+    }, {
+        "year": "2004",
+        "events": [{
+            "uid": 10,
+            "yearID": 0,
+            "year": "2004",
+            "month": "",
+            "title": "Lexus",
+            "x": "6",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "lexus.svg",
+            "text": ["Amaze becomes responsible for Lexus Europe - 42 websites across 34 markets, and 26 languages. A longstanding relationship with Lexus begins and the web support team evolves rapidly to keep up with changing audience and behaviour.  Amaze goes on to create the acclaimed award-winning Oculus Rift campaign and website build, a landmark virtual reality experience."]
+        }]
+    }, {
+        "year": "2007",
+        "events": [{
+            "uid": 11,
+            "yearID": 0,
+            "year": "2007",
+            "month": "",
+            "title": "Acquisition by Hasgrove",
+            "x": "7",
+            "y": "3",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Amaze is acquired by communications business Hasgrove to add digital to its portfolio and support the next phase of growth."]
+        }, {
+            "uid": 12,
+            "yearID": 0,
+            "year": "2007",
+            "month": "",
+            "title": "Henri Lloyd",
+            "x": "6",
+            "y": "3",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "henri-lloyd.svg",
+            "text": ["Amaze's first commerce solution - a multinational digital rebrand and e-commerce redevelopment for iconic clothing brand, Henri Lloyd. The project is rolled out to 7 countries in 4 languages."]
+        }, {
+            "uid": 13,
+            "yearID": 0,
+            "year": "2007",
+            "month": "",
+            "title": "Coca-Cola Enterprises",
+            "x": "6",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "coca-cola.svg",
+            "text": ["Amaze works with Coca-Cola on a range of digital activities. These include digital  design and build and corporate communications like CSR and digital internal communications. We work with them again on a variety of internal comms solutions around the 2012 Olympics."]
+        }]
+    }, {
+        "year": "2009",
+        "events": [{
+            "uid": 14,
+            "yearID": 0,
+            "year": "2009",
+            "month": "",
+            "title": "Dyson",
+            "x": "7",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "dyson.svg",
+            "text": ["Amaze is appointed lead European digital agency for Dyson, and begins supporting the brand with multilingual media campaigns. These include search, online advertising and social media across 9 countries in 6 languages."]
+        }]
+    }, {
+        "year": "2010",
+        "events": [{
+            "uid": 15,
+            "yearID": 0,
+            "year": "2010",
+            "month": "",
+            "title": "Bridgestone",
+            "x": "7",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "bridgestone.svg",
+            "text": ["Amaze works on a pan-European digital consumer engagement programme for Bridgestone, aligning a disparate suite of websites. The solution is rolled out across Europe in different languages to engage users in the complicated process of online tyre selection and recommendation."]
+        }, {
+            "uid": 16,
+            "yearID": 0,
+            "year": "2010",
+            "month": "",
+            "title": "Saucy Fish",
+            "x": "8",
+            "y": "3",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "the-saucy-fish-co.svg",
+            "text": ["Amaze is briefed to educate consumers and influence sales through an integrated digital approach. The work includes design and build of an online fish 'hub' (The Dock), a blog for foodies, an animated TV ad and a seamless mix of media relations, social media, online display ads, and sampling at top foodie events."]
+        }, {
+            "uid": 17,
+            "yearID": 0,
+            "year": "2010",
+            "month": "",
+            "title": "Top 10 digital agency ranking",
+            "x": "7",
+            "y": "4",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Amaze is ranked as a Top 10 digital agency by leading analyst firm Forrester in their UK Interactive Agencies wave."]
+        }]
+    }, {
+        "year": "2011",
+        "events": [{
+            "uid": 18,
+            "yearID": 0,
+            "year": "2011",
+            "month": "",
+            "title": "Unilever",
+            "x": "8",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "unilever.svg",
+            "text": ["Unilever becomes Amaze's first global account. Our remit expands significantly over time into its present form of guardians of the global brand - protecting brand consistency whilst ensuring enough adaptability for local audiences. Working with Unilever's lead brand agency we help to create a new Corporate Brand identity and Digital Brand Guidelines to be implemented across all digital channels."]
+        }]
+    }, {
+        "year": "2012",
+        "events": [{
+            "uid": 19,
+            "yearID": 0,
+            "year": "2012",
+            "month": "",
+            "title": "Virgin Trains East Coast",
+            "x": "8",
+            "y": "4",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "east-coast.svg",
+            "text": ["As Virgin Trains East Coast's lead digital agency, Amaze is briefed to completely redesign their website and online user journey. The new site accesses a complex network of data from varying sources, whilst seamlessly integrating with a booking engine that operates through an entirely separate platform."]
+        }, {
+            "uid": 20,
+            "yearID": 0,
+            "year": "2012",
+            "month": "",
+            "title": "Coats",
+            "x": "8",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "coats.svg",
+            "text": ["Coats selects Amaze, to be lead digital partner across its core commercial divisions, including Coats Industrial. In 2012, Amaze develops and launches an innovative customer-facing web portal for the Industrial Division of Coats plc. The websites are supported in 70 markets and 11 languages."]
+        }, {
+            "uid": 21,
+            "yearID": 0,
+            "year": "2012",
+            "month": "",
+            "title": "ASICS",
+            "x": "8",
+            "y": "5",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "asics.svg",
+            "text": ["Amaze is made responsible for the strategic development and delivery of a global eCommerce solution - transitioning the business to a direct to consumer sales model. The remit includes development and implementation of solution architecture, brand, creative and technical strategies and global implementation. Amaze go on to develop an interactive in-store experience called the Product Advisor, giving customers a more in-depth one-to-one experience."]
+        }]
+    }, {
+        "year": "2013",
+        "events": [{
+            "uid": 22,
+            "yearID": 0,
+            "year": "2013",
+            "month": "",
+            "title": "Acquisition by St Ives Group",
+            "x": "9",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["In early 2013, Amaze is acquired by St Ives Group to establish a new digital solutions pillar within the Group's Marketing Services division. This support and investment allows us to accelerate our growth and expand into new territories."]
+        }, {
+            "uid": 23,
+            "yearID": 0,
+            "year": "2013",
+            "month": "",
+            "title": "NSPCC",
+            "x": "9",
+            "y": "3",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "nspcc.svg",
+            "text": ["Amaze works with the NSPCC to bring the charity's new brand to life across all digital devices. The fully responsive digital solution is designed to put users first and delivers an inspirational and engaging experience that clearly tells the story of the ambitious, life-changing work that the NSPCC undertakes. Amaze is later appointed to work on the ChildLine account, a confidential counselling service provided by the NSPCC."]
+        }, {
+            "uid": 24,
+            "yearID": 0,
+            "year": "2013",
+            "month": "",
+            "title": "Pizza Hut",
+            "x": "9",
+            "y": "6",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "pizza-hut.svg",
+            "text": ["Amaze is commissioned by Pizza Hut Restaurants to transform their identity online. Embarking on a business-wide brand revolution programme, we rebuild their online identity on a new platform, integrating social and mobile elements to more effectively reach out to a young audience."]
+        }, {
+            "uid": 25,
+            "yearID": 0,
+            "year": "2013",
+            "month": "",
+            "title": "Travis Perkins",
+            "x": "9",
+            "y": "5",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "travis-perkins.svg",
+            "text": ["Amaze relaunches the Travis Perkins corporate site in line with new branding. It's a  fully responsive site design offering a refreshed web presence with greater usability for all audiences. The site is underpinned with a robust analytics framework to enable a higher level of internal KPI reporting and is voted as one of the best responsive websites of 2014 by Econsultancy."]
+        }]
+    }, {
+        "year": "2014",
+        "events": [{
+            "uid": 26,
+            "yearID": 0,
+            "year": "2014",
+            "month": "",
+            "title": "Launch of Loop Integration",
+            "x": "9",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Loop - a joint venture between long-standing hybris partner contiigo and Amaze - launches, offering US-focused omni-channel commerce solutions from the heart of Chicago. This is our first move into the US."]
+        }, {
+            "uid": 27,
+            "yearID": 0,
+            "year": "2014",
+            "month": "",
+            "title": "Carlson Rezidor",
+            "x": "10",
+            "y": "1",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "carlson-rezidor.svg",
+            "text": ["Amaze is appointed by Carlson Rezidor to work on the Radisson Blu global content strategy and digital comms. Our role is to provide strategic support and identify more interesting ways to communicate the stylish, iconic and sophisticated elements of the brand story. We are also appointed to build an interactive website to mark the launch of a new brand and hotel concept, Radisson Red."]
+        }, {
+            "uid": 28,
+            "yearID": 0,
+            "year": "2014",
+            "month": "",
+            "title": "Red Bull",
+            "x": "9",
+            "y": "4",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "red-bull.svg",
+            "text": ["Red Bull hires Amaze to help them innovate their event websites through the introduction of new technologies. Projects include Cliff Diving and The Red Bull Air Race where we have leveraged social technology to enhance the anticipation and live experience through content sharing and discussion."]
+        }]
+    }, {
+        "year": "2015",
+        "events": [{
+            "uid": 29,
+            "yearID": 0,
+            "year": "2015",
+            "month": "",
+            "title": "Formation of Amaze One",
+            "x": "10",
+            "y": "3",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["Fellow St Ives Company, Occam collaborates with Amaze on a new CRM proposition that combines both companys' data and digital expertise. The new venture is branded Amaze One."]
+        }, {
+            "uid": 30,
+            "yearID": 0,
+            "year": "2015",
+            "month": "",
+            "title": "Amaze today",
+            "x": "10",
+            "y": "2",
+            "markets": "",
+            "languages": "",
+            "websites": "",
+            "logo_url": "",
+            "text": ["A leading full service digital marketing, commerce and technology consultancy, Amaze is ranked 5th in the Digital Elite category in The Drum's Digital Census. We're also placed 11th in the UK's Top 100 Digital Agencies Report by Econsultancy, 8th in the full service category and 2nd in the UK's top B2B marketing communications agencies."]
+        }]
+    }]
+}

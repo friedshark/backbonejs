@@ -1,0 +1,359 @@
+// Expanding Grid
+// -------------------------
+
+.expanding-grid {
+	$root: '.expanding-grid';
+
+	@mixin divider{
+		content: '';
+		display: inline-block;
+		background-color: colour(white);
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 1px;
+		bottom: rem(-2px);
+		border-bottom: 1px solid colour(grey, lighter);
+	}
+
+	@include clearfix;
+
+	// specific styling for partners grid
+	&--partners-grid & {
+
+		&__item{
+
+			&:after {
+				bottom: rem(-25px);
+			}
+
+		}
+	}
+
+	// specific styling for people grid
+	&--people-grid & {
+
+		&__item {
+			@include link-base;
+			@include link-alt;
+			@include get-layout-spacing(large-connected, padding-top);
+		}
+
+		&__article {
+			@include get-layout-spacing(large-connected, padding-bottom);
+		}
+	}
+
+	&__heading{
+		text-align: center;
+
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&__grid-partners {
+		margin-top: rem(-20px);
+		@include respond-to-min(medium) {
+			margin-top: rem(-40px);
+		}
+
+		&__item{
+			margin-top: 0;
+		}
+	}
+
+	&__flexbox{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item{
+		display: block;
+		flex-basis: 100%;
+		max-width: 100%;
+		position: relative;
+		text-decoration: none;
+
+		&:nth-of-type(1n){
+			&:after{
+				@include divider;
+				width: rem(62px);
+			}
+		}
+
+		&:nth-last-of-type(1) {
+			&:after {
+				display: none;
+			}
+		}
+
+		@include respond-to-min('medium'){
+			flex-basis: 33.333%;
+			max-width: 33.333%;
+
+			&:nth-of-type(1n){
+				&:after{
+					display: none;
+				}
+			}
+
+			&:nth-of-type(3n+2){
+				&:after{
+					@include divider;
+					width: 50%;
+				}
+			}
+
+			&:nth-last-of-type(1),
+			&:nth-last-of-type(2) {
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		&--active {
+			#{$root}__name {
+				color: colour(grey, base-font);
+			}
+		}
+	}
+
+
+	&__article {
+		padding: rem(0 30px 30px);
+		text-align: center;
+	}
+
+	&__article-text{
+		color: colour(grey, lighter);
+	}
+
+	&__article-logos{
+		width: 50%;
+		height: auto;
+		vertical-align: top;
+		@include respond-to-min('medium') {
+			width: 80%;
+		}
+		@include respond-to-min('large') {
+			width: 50%;
+		}
+	}
+
+	&__title{
+		display: block;
+		color: colour(grey, lighter);
+	}
+
+	// specific to modal
+
+	&__modal {
+		margin-right: 0;
+		color: colour(white);
+		background-color: colour(blue-black, light);
+		position: relative;
+		clear: both;
+
+		&-container {
+			display: block;
+			width: 100%;
+		}
+
+		&-inner {
+			overflow: hidden;
+			position: relative;
+		}
+
+		&-pad {
+			@include get-layout-spacing(large-connected, padding-top, padding-bottom);
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&-marker {
+			background: colour(blue-black, light);
+			left: 50%;
+			position: absolute;
+			top: 0;
+			transform: translate(-50%, -50%);
+			transition: left 0.5s;
+			width: rem(10px);
+
+			&:after {
+				bottom: 100%;
+				left: 50%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-bottom-color: colour(blue-black, light);
+				border-width: rem(10px);
+				margin-left: rem(-10px);
+			}
+		}
+
+		&-content {
+
+            .activity-icons {
+				color: colour(white);
+			}
+		}
+
+	}
+
+	&__modal-controls {
+        padding: rem(0 $gutter $gutter $gutter);
+        text-align: right;
+
+        @include respond-to-min(medium) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+		@include respond-to-min(large) {
+			padding-bottom: 0;
+            margin-bottom: 0;
+            text-align: left;
+		}
+
+		&-icons {
+            margin-right: 0;
+            padding: rem(10px);
+			background-color: transparent;
+			border: 0;
+            font-size: rem(20px);
+			cursor: pointer;
+			vertical-align: middle;
+
+            @include respond-to-min(medium) {
+                margin-right: 0;
+            }
+
+            @include respond-to-min(large) {
+                margin-right: rem(15px);
+                padding: rem(10px 0);
+            }
+
+			@include active {
+				color: colour(white);
+			}
+
+			&:disabled {
+				opacity: 0.5;
+			}
+
+            &:last-child {
+                margin-right: 0;
+            }
+		}
+
+		&-spacer {
+			display: inline-block;
+			height: rem(22px);
+			width: 1px;
+			border-right: 1px solid colour(grey, base-font);
+			background-color: transparent;
+			margin-right: rem(12px);
+			vertical-align: middle;
+
+            @include respond-to-min(medium) {
+                margin-right: rem(18px);
+            }
+		}
+	}
+
+	.hex-loader {
+		top: calc(50% + rem(30px));
+	}
+}
+
+// expanding grid article page styles (page with no JS)
+
+.grid-article{
+
+	&__name,
+	&__title{
+		text-align: center;
+		text-decoration: none;
+	}
+
+	&__heading {
+		margin-top: 0;
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&__subheading {
+		color: colour(grey, lighter);
+		display: block;
+	}
+
+	&__image {
+		display: block;
+		@include get-layout-spacing(small-connected, margin-bottom);
+
+		img {
+			width: 100%;
+		    height: auto;
+		}
+	}
+
+	&__text{
+		position: relative;
+		display: block;
+
+		@include get-layout-spacing(small, margin-bottom);
+
+		&--people {
+
+			@include get-layout-spacing(small, padding-bottom);
+
+			// Overidding editorial styles
+
+			h3 {
+				text-align: left;
+				font-size: rem(20px);
+        		line-height: 1.2;
+        		@include respond-to-min('medium') {
+		        	margin-bottom: 0;
+		        	font-size: rem(20px);
+		        }
+			}
+
+			&:before,
+			&:after {
+				content: '';
+				display: inline-block;
+				height: rem(1px);
+				background-color: colour(grey, lighter);
+				position: absolute;
+				bottom: 0;
+			}
+			&:before {
+				width: rem(45px);
+				left: 0;
+			}
+			&:after {
+				width: rem(20px);
+				right: 0;
+			}
+		}
+	}
+
+	&__social {
+		float: left;
+		display: block;
+
+		@include get-layout-spacing(large-connected, margin-bottom);
+	}
+}
+
+//specific styling for people expanding grid details more content h2 to override editorial styling
+
+.grid-article__text--people.editorial{
+	h2 {
+		text-align: left;
+		@include responsive-type-size(text--large);
+	}
+}

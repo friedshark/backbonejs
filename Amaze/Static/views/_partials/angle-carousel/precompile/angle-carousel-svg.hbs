@@ -1,0 +1,16 @@
+<svg id="angle-carousel-slides" class="angle-carousel__slides angle-carousel__slides--active" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" tabindex="0">
+
+    <defs>
+        <clipPath id="mask" clipPathUnits="objectBoundingBox">
+            <polygon points="0,0,1,0,1,1,0,1,0,0" />
+        </clipPath>
+        {{#each this}}
+        <clipPath id="clip{{id}}" clipPathUnits="objectBoundingBox">
+            <polygon points="0,0,1,0,1,1,0,1,0,0" />
+        </clipPath>
+        {{/each}}
+    </defs>
+
+    <g class="angle-carousel__mask" clip-path="url(#mask)" id="container"></g>
+
+</svg>

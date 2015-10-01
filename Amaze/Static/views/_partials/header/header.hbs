@@ -1,0 +1,34 @@
+---
+title: "Header"
+---
+
+<header class="header{{#is header "overlay"}} header--overlay{{/is}}" role="banner" data-require="controllers/headerController">
+
+    <div class="header__max-width site__max-element-width">
+
+        <div class="header__inner">
+
+            <div class="header__logo">
+                <div class="header__avatar" data-view="avatarView">
+
+                    <img class="header__avatar-fallback" src="/img/avatar/fallback-large-hi-res.png"
+                         sizes="(min-width: 640px) 400px, 200px"
+                         srcset="/img/avatar/fallback-small.png 200w,
+                            /img/avatar/fallback-small-hi-res.png 300w,
+                            /img/avatar/fallback-large.png 400w,
+                            /img/avatar/fallback-large-hi-res.png 600w" />
+                </div>
+                <a href="/static/compiled/pages/home-page.html">
+                    <img src="/img/amaze-logo.svg" alt="Amaze logo" class="header__logo-mark" />
+                </a>
+            </div>
+
+            <a class="header__menu" href="/static/compiled/pages/sitemap-page.html" data-view="menuView"><span class="icon icon--menu"></span><span class="vh">Menu</span></a>
+
+        </div>
+
+        {{> _navigation-primary-nav }}
+
+    </div>
+
+</header>

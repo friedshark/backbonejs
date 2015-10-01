@@ -1,0 +1,129 @@
+// testimonial-carousel
+// -------------------------
+
+.image-gallery-carousel {
+
+    &__pre-content,
+    &__post-content {
+        padding-left: rem($gutter);
+        padding-right: rem($gutter);
+
+        @include get-layout-spacing(small-connected, margin-bottom);
+
+        @include respond-to-min(medium) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__post-content {
+        margin-bottom: 0 !important;
+    }
+
+    &__heading {
+        text-align: center;
+        @include get-layout-spacing(small-connected, margin-bottom);
+    }
+
+    &__items {
+        padding: 0;
+        padding-left: rem($gutter);
+        padding-right: rem($gutter);
+        list-style: none;
+        margin-bottom: rem(40px);
+
+        &.owl-carousel {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }
+
+    &__item {
+        margin-left: rem($gutter/2);
+        margin-right: rem($gutter/2);
+
+        padding-left: 0;
+        padding-right: 0;
+        @include get-layout-spacing(small-connected, padding-top, padding-bottom);
+
+        .owl-carousel & {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &:hover {
+            cursor: grab;
+        }
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .owl-item {
+        transform: translateZ(0) scale(1.0, 1.0);
+    }
+
+    .owl-nav {
+        .owl-prev,
+        .owl-next {
+            display: block;
+            width: rem(18px); // Corresponds to JS
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.6);
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+
+            @include respond-to-min('medium') {
+                width: rem(38px); // Corresponds to JS
+            }
+
+            @include respond-to-min('large') {
+                width: rem(90px); // Corresponds to JS
+            }
+            .icon {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 50%;
+                font-size: rem(16px);
+                margin-top: rem(-8px);
+
+                @include respond-to-min('medium') {
+                    font-size: rem(46px);
+                    margin-top: rem(-23px);
+                }
+            }
+
+            transition: background 0.2s ease;
+            @include active {
+                background: rgba(0, 0, 0, 0);
+            }
+        }
+        .owl-next {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    .owl-dots {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        .owl-dot {
+            margin-top: rem(12px);
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<form class="job-listing__form vsb--large-connected filter-view" data-view="filterView">
+
+    <fieldset class="filter-view__fieldset">
+        <legend class="filter-view__legend vh">Filter vacancies</legend>
+        <div class="filter-view__option">
+            <div data-view="selectView" data-filter="location" class="frm-select-wrap">
+                <label for="career-by-location" class="vh">Career by location:</label>
+                <select id="career-by-location" name="career-by-location" class="frm-select">
+                    <option value="">Career by location</option>
+                    <option value="Liverpool">Liverpool</option>
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                </select>
+                <span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+            </div>
+        </div>
+        <span class="filter-view__ampersand filter-view__ampersand--job-listing content-ampersand text--large"></span>
+        <div class="filter-view__option">
+            <div data-view="selectView" data-filter="category" class="frm-select-wrap">
+                <label for="career-by-category" class="vh">Careers by discipline:</label>
+                <select id="career-by-category" name="career-by-category" class="frm-select">
+                    <option value="">Careers by discipline</option>
+                    <option value="Business Analysis">Business Analysis</option>
+                    <option value="Client Services">Client Services</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Data Intelligence">Data Intelligence</option>
+                    <option value="Digital Operations Service">Digital Operations Service</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Media">Media</option>
+                    <option value="Operations">Operations</option>
+                    <option value="PR">PR</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="Strategy">Strategy</option>
+                    <option value="Technical">Technical</option>
+                    <option value="UX">UX</option>
+                </select>
+                <span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+            </div>
+        </div>
+
+        <button class="filter-view__submit btn btn--square" type="submit" value="submit" data-filter-auto-submit>Filter vacancies</button>
+    </fieldset>
+
+</form>

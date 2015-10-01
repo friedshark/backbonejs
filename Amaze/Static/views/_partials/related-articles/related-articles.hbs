@@ -1,0 +1,17 @@
+---
+title: "Related Articles"
+---
+
+<h2 class="static__sub-heading text--large">Single</h2>
+
+{{> _related-articles-single }}
+
+<h2 class="static__sub-heading text--large">Carousel</h2>
+
+{{#parseJSON '{"vertical-spacing" : true}'}}
+{{> _related-articles-carousel }}
+{{/parseJSON}}
+
+<h2 class="static__sub-heading text--large">Skew Carousel</h2>
+
+{{> _related-articles-skew-carousel }}

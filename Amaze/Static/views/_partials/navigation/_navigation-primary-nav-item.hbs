@@ -1,0 +1,42 @@
+
+<li class="navigation__item navigation__item--pnav {{#if children }} navigation__item--children{{/if}} {{#if current}} navigation__item--current{{/if}}" tabindex="0">
+    <a class="navigation__item-link navigation__item-link--pnav {{#if children }} navigation__item-link--children{{/if}}"
+       href="{{ link }}" tabindex="-1" {{#if children }} data-navigation-children{{/if}}>
+        <span class="navigation__item-text navigation__item-text--pnav{{#if children }} navigation__item-text--children{{else}} navigation__item-text--line{{/if}}">
+            {{ title }}
+            {{#if children }}
+            <span class="icon icon--arrow-right-small"></span>
+            <span class="icon icon--arrow-down"></span>
+            {{/if}}
+        </span>
+    </a>
+
+    {{#if children }}
+    <div class="navigation__level" data-navigation-height data-navigation-level>
+
+        <div class="navigation__skew navigation__skew--snav" data-navigation-height data-navigation-close></div>
+
+        <div class="navigation__inner">
+
+            <div class="navigation__scroll" data-navigation-height data-navigation-scroll>
+
+                <button class="navigation__close" data-navigation-close>
+                    <span class="icon icon--close"><span class="vh">Close</span></span>
+                </button>
+
+                <a href="#" class="navigation__title link link--dark text--large">{{title}}</a>
+
+                <a href="#" class="navigation__back navigation__item-link" data-navigation-back>
+                    <span class="navigation__back-text navigation__item-text">
+                        <span class="icon icon--arrow-left-small"></span> Back
+                    </span>
+                </a>
+
+                {{> _navigation-secondary-nav children }}
+            </div>
+
+        </div>
+
+    </div>
+    {{/if}}
+</li>

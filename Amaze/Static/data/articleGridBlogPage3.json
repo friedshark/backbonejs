@@ -1,0 +1,50 @@
+{
+    "items": [
+        {
+            "type": "Blog Archive",
+            "id": "13",
+            "title": "Blog Article 13",
+            "date": "18 January 2013",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis libero, tristique in consectetur non.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 123,
+            "showComments": true,
+            "views": 1234,
+            "showViews": true,
+            "categories": [ "Advertising" ],
+            "month": 1,
+            "year": 2013,
+            "display": "full"
+        },
+        {
+            "type": "Blog Archive",
+            "id": "14",
+            "title": "Blog Article 14",
+            "date": "18 February 2013",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam turpis libero, tristique in consectetur non.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 123,
+            "showComments": true,
+            "views": 1234,
+            "showViews": true,
+            "categories": [ "Analytics" ],
+            "month": 2,
+            "year": 2013,
+            "display": "half"
+        }
+    ]
+}

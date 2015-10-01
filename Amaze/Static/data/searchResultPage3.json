@@ -1,0 +1,50 @@
+{
+    "filters": [
+    	{
+    		"id": 2,
+    		"text": "Case Studies",
+    		"value": "Case Studies",
+    		"selected": true
+    	},
+    	{
+    		"id": 3,
+    		"text": "People",
+    		"value": "People",
+    		"selected": false
+    	}
+    ],
+    "results": [
+    	{
+	        "title": "News title one",
+	        "link": "http://amaze.com/news/link-one/",
+	        "summary": "Lorem ipsum dolor UX sit amet, consectetur adipiscing elit. Aenean euismod bibum..."
+	    },
+	    {
+	        "title": "News title two",
+	        "link": "http://amaze.com/news/link-two/",
+	        "summary": "Lorem ipsum dolor UX sit amet, consectetur adipiscing elit. Aenean euismod bibum..."
+	    },
+	    {
+	        "title": "News title three",
+	        "link": "http://amaze.com/news/link-three/",
+	        "summary": "Lorem ipsum dolor UX sit amet, consectetur adipiscing elit. Aenean euismod bibum..."
+	    },
+	    {
+	        "title": "News title four",
+	        "link": "http://amaze.com/news/link-four/",
+	        "summary": "Lorem ipsum dolor UX sit amet, consectetur adipiscing elit. Aenean euismod bibum..."
+	    },
+	    {
+	        "title": "News title five",
+	        "link": "http://amaze.com/news/link-five/",
+	        "summary": "Lorem ipsum dolor UX sit amet, consectetur adipiscing elit. Aenean euismod bibum..."
+	    },
+	    {
+	        "title": "News title six",
+	        "link": "http://amaze.com/news/link-six/",
+	        "summary": "Lorem ipsum dolor UX sit amet, consectetur adipiscing elit. Aenean euismod bibum..."
+	    }
+	],
+	"pageId": 3,
+	"more": false
+}

@@ -1,0 +1,27 @@
+
+<section class="job-listing vsb--large">
+
+    <div class="site__max-element-width">
+
+        <div class="grid">
+
+            <div class="grid__item small--one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+
+                <h1 class="job-listing__heading text--xlarge">Related roles</h1>
+
+                <div class="job-listing__items">
+
+                    {{#each jobListings.items }}
+
+                    {{> job-listing-item this }}
+
+                    {{/each}}
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

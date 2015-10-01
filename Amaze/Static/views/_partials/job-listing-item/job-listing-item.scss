@@ -1,0 +1,54 @@
+// job-listing-item
+// -------------------------
+
+.job-listing-item {
+
+    &__role,
+    &__date {
+        color: colour(grey, lighter);
+    }
+
+    &__date {
+        margin-bottom: rem(2px);
+    }
+
+    &__heading {
+        margin: 0;
+        padding: 0;
+        color: colour(orange);
+        @include get-adjusted-layout-spacing(small-connected, text--large, padding-bottom);
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__role {
+        margin-bottom: get-layout-space(small-connected, text--base, small);
+        
+        @include respond-to-min('medium') {            
+            margin-bottom: 0;
+        }
+    }
+
+    &__location,
+    &__employment-type {
+
+        @include respond-to-min(small) {
+            text-align: right;
+            display: block;
+        }
+    }
+
+    &__employment-type {
+        &:before {
+            content: '/ ';
+            display: inline-block;
+
+            @include respond-to-min(small) {
+                content: '';   
+            }
+        }        
+    }
+}

@@ -1,0 +1,14 @@
+<nav class="frm-nav">
+	<ol class="frm-nav__items" role="tablist">
+		{{#each this}}
+			<li class="frm-nav__item" role="tab">
+				<button type="button" class="frm-nav__step {{#if active}}frm-nav__step--active{{/if}}" {{#is valid false}}disabled="disabled"{{/is}} {{#if active}}aria-selected="true"{{else}}aria-selected="false"{{/if}} aria-controls="{{name}}" data-nav="{{id}}">
+					<span class="frm-nav__step-count">
+						<span class="frm-nav__step-label">Step</span>{{step}}
+					</span>
+					<span class="frm-nav__step-title">{{name}}</span>
+				</button>
+			</li>
+		{{/each}}
+	</ol>
+</nav>

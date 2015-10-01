@@ -1,0 +1,247 @@
+// Components - Device showcase
+// -------------------------
+
+
+@keyframes monitor{
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes mobile{
+  0% {
+    transform:  translate(20%, 0);
+  }
+  20% {
+    transform:  translate(20%, 0);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0, 0);
+  }
+}
+
+@keyframes tablet{
+  0% {
+    transform:  translate(25%, 0);
+  }
+  20% {
+    transform:  translate(25%, 0);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0, 0);
+  }
+}
+
+@keyframes oculus{
+  0% {
+    transform:  translate(-20%, 0);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0, 0);
+  }
+}
+
+@keyframes hover {
+	0% {
+		transform: translate(0);
+	}
+	50% {
+		transform: translate(0, 20px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+
+
+.device-showcase {
+
+	$root: '.device-showcase';
+
+	padding-left: rem($gutter);
+	padding-right: rem($gutter);
+
+	@mixin background-positioning {
+		height: 0;
+		background-size: cover;
+		position: relative;
+	}
+
+	@mixin js-state {
+		.js & {
+			opacity: 0;
+		}
+	}
+
+	&__container{
+		position: relative;
+       	margin-bottom: 5%;
+        // fix for oculus device on small break point
+        padding-bottom: 65.25%;
+        width: 90%;
+        margin-left: 5%;
+        height: 0;   
+        @include respond-to-min(medium){
+			width: 100%;
+			margin-left: 0;
+        }
+	}
+
+	&__monitor{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+
+		@include js-state;
+
+		#{$root}--animate & {
+			animation: monitor ease 2s forwards;
+		}
+
+	    &-picture{
+		    position: absolute;
+		    top: 4.6%;
+		    left: 13%;
+		    display: inline-block;
+		    width: 74.5%;
+	    }
+
+	    &-image{
+		    display: block;
+		    width: 100%;
+	    }
+
+		&-device {
+			background: url('../img/device-showcase/monitor-bg.png') no-repeat top left;
+			width: 100%;
+			padding-bottom: 77%; /* 16:9 */
+			display: block;
+
+			@include background-positioning;
+
+
+		}		
+	}
+
+
+	&__oculus {		
+		display: block;
+		position: absolute;
+		padding-top: 39%;
+		height: 0;
+		left: -6%;
+		bottom: 0;
+		width: 55%;
+
+		&:after {
+			content: '';
+			display: block;
+			padding-bottom: 15%;
+			height: 0;
+			width: 100%;
+			background: url('../img/device-showcase/oculus-shadow.png') no-repeat top left;
+            background-size: contain;
+            position: relative;
+		}		
+
+		&-image {
+			background: url('../img/device-showcase/oculus.png') no-repeat top left;
+			width: 100%;
+			position: absolute;
+			background-size: contain;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			#{$root}--animate & {
+				animation: hover ease 3s infinite;
+				animation-delay: 2s;		
+			}
+		}		
+
+		@include js-state;	
+
+		#{$root}--animate & {
+			animation: oculus ease 2s forwards;
+		}		
+	}
+
+	&__mobile {
+		position: absolute;
+        bottom: 0;
+		display: block;
+		padding-top: 22%;
+		height: 0;
+		left: 53%;
+		width: 12%;
+
+	    #{$root}--animate & {
+		    animation: mobile ease 2s forwards;
+	    }
+
+	    @include js-state;
+	
+
+	    &-image {
+		    display: block;
+		    width: 79%;
+		    position: absolute;
+		    top: 17%;
+		    left: 6%;
+	    }
+
+	    &-device{
+			background: url('../img/device-showcase/mobile-bg.png') no-repeat top left;
+			background-size: contain;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    position: absolute;  	    	
+	    }			
+	}
+
+	&__tablet {
+		position: absolute;
+        bottom: 0;
+		display: block;
+		width: 30%;
+		padding-top: 39%;
+		height: 0;
+		right: 3%;
+
+	    #{$root}--animate & {
+		    animation: tablet ease 2s forwards;
+	    }
+	
+	    @include js-state; 		
+
+
+	    &-image {
+	    	display: block;
+	    	width: 79%;
+	    	position: absolute;
+	    	top: 9%;
+	    	left: 10%;
+	    }
+
+	    &-device {
+			background: url('../img/device-showcase/tablet-bg.png') no-repeat top left;
+			background-size: contain;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    position: absolute;       
+
+		}
+
+	}
+
+	
+}

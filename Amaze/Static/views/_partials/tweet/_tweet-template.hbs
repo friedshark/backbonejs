@@ -1,0 +1,18 @@
+
+<article class="tweet {{class}}" data-require="views/tweetView">
+    
+    <div class="tweet__bg {{theme}}"></div>
+
+    <div class="tweet__inner">        
+
+        <div class="tweet__items" data-tweet-items>
+
+            {{#each tweets}}
+                {{> _tweet-item-partial this }}
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</article>

@@ -1,0 +1,345 @@
+// brand
+// -------------------------
+
+.brand {
+	margin-top: rem(-30px);
+	text-align: center;
+
+	@mixin viewport-fill {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	&__outer {
+		color: colour(white);
+		position: relative;
+		overflow: hidden;
+		text-align: left;
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__constraint {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+	}
+
+	&__expander {
+		overflow: hidden;
+		transition: opacity map-get($transitions, expanders);
+
+		&--active {
+			opacity: 1;
+		}
+
+		&-inner {
+			padding-top: rem(20px);
+		}
+	}
+
+	&__avatar {
+		position: relative;
+		width: 100%;
+		min-height: rem(150px);
+
+		@include respond-to-min(medium) {
+			min-height: rem(300px);
+		}
+
+		&-inner {
+			text-align: center;
+		}
+
+		&-fallback, &-canvas {
+			display: inline-block;
+			max-width: 100%;
+		}
+	}
+
+	&__fallback {
+		margin: 0 auto;
+		max-width: rem(600px);
+		width: 100%;
+	}
+
+	&__logo {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: rem(100px);
+
+		@include respond-to-min(medium) {
+			width: rem(160px);
+		}
+
+		.js & {
+
+		}
+	}
+
+	&__detail {
+		@include get-layout-spacing(large, padding-bottom);
+		padding-left: $gutter;
+		padding-right: $gutter;
+		position: relative;
+		width: 100%;
+
+		@include respond-to-min(medium) {
+			left: 1/8 * 100%;
+			padding-left: 0;
+			padding-right: 0;
+			width: 6/8 * 100%;
+		}
+
+		@include respond-to-min(large) {
+			left: 2/12 * 100%;
+			width: 8/12 * 100%;
+		}
+
+		&--active {
+
+			@include respond-to-min(large) {
+				left: 0;
+				padding: rem($gutter * 2 $gutter);
+				position: absolute;
+				top: 0;
+				width: 33.333%;
+				height: 100%;
+			}
+
+			@include respond-to-min($layout-max-element-width) {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	&__controls {
+
+		&-inner {
+
+			@include respond-to-min(large) {
+				left: 0;
+				position: relative;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+
+	&__control {
+		@include get-layout-spacing(medium-connected, margin-bottom);
+
+		&-toggle {
+			@include link-base;
+			@include link-dark;
+			@include responsive-type-size(text--large);
+			background: transparent;
+			border: 0;
+			padding: 0;
+			opacity: 0.5;
+			text-align: left;
+			transition: opacity map-get($transitions, buttons);
+
+			@include active ('&[aria-expanded="true"]') {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__audio {
+		bottom: 5%;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__toggle {
+		display: inline-block;
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+		padding: 0;
+
+		&--expand {
+			font-size: rem(12px);
+			position: relative;
+			top: rem(-5px);
+			z-index: 2;
+
+			.icon {
+				font-size: rem(13px);
+				font-weight: bold;
+				height: rem(30px);
+				//padding-top: rem(14px);
+				padding-top: 0;
+				margin-bottom: rem(15px);
+				position: relative;
+				width: rem(33px);
+
+				&:before {
+					color: colour(orange);
+					position: relative;
+					z-index: 2;
+					top: 50%;
+				}
+
+				&:after {
+					animation: rotate-trixel 3s linear infinite;
+					background: transparent url($helper-image-path + 'brand/rotate-trixel-outline.svg') center center no-repeat;
+					content: '';
+					display: block;
+					left: 0;
+					position: absolute;
+					top: 0;
+					transform: rotate(0deg);
+					transform-origin: 50% 65%;
+					width: rem(33px);
+					height: rem(33px);
+					z-index: 1;
+				}
+			}
+
+			@include active {
+
+				.icon {
+
+					&:before {
+						color: colour(white);
+					}
+
+					&:after {
+						background-image: url($helper-image-path + 'brand/rotate-trixel-fill.svg');
+					}
+				}
+			}
+		}
+
+		&--collapse {
+			position: absolute;
+			padding: rem($gutter);
+			right: 0;
+			top: rem($gutter);
+		}
+
+		&-detail {
+			display: block;
+			line-height: 1.25;
+		}
+
+		&-reveal {
+			display: none;
+		}
+
+		&-reveal, &-action {
+			opacity: none;
+		}
+
+		&-action {
+			display: block;
+			color: colour(orange);
+			font-size: rem(12px);
+			line-height: 1.25;
+			opacity: 0;
+			text-decoration: none;
+		}
+
+		@include active('&[aria-expanded="true"]') {
+
+			.icon:after {
+				animation-play-state: paused;
+			}
+
+			.brand__toggle-reveal {
+				display: inline-block;
+			}
+
+			.brand__toggle-action {
+				opacity: 1;
+			}
+		}
+
+		.no-js & {
+			display: none;
+		}
+	}
+
+	&__anchor {
+		position: relative;
+	}
+
+	&__overlay {
+		@include viewport-fill;
+		@include radial-gradient-backgrounds(dark-2);
+		@include trixel-background;
+		z-index: 2;
+
+		&--error {
+			@include radial-gradient-backgrounds(brand-1);
+		}
+
+		&-inner {
+			height: 100%;
+			position: relative;
+			z-index: 1;
+		}
+
+		&-content {
+			left: 0;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			width: 100%;
+		}
+	}
+
+	&__graphs {
+
+		&-list, & &-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			&-item, & &-item {
+				padding-left: 0;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&-track {
+			background-color: rgba(colour(white), 0.2);
+			display: block;
+			height: rem(1px);
+			width: 100%;
+		}
+
+		&-line {
+			background-color: colour(orange);
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+@keyframes rotate-trixel {
+
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

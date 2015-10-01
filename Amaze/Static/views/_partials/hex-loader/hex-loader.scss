@@ -1,0 +1,56 @@
+// Async loader animation
+// -------------------------
+
+.hex-loader {
+	line-height: 0;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	&__inner {
+	    display: inline-block;
+	    position: relative;
+	    width: 0;
+	    height: 0;
+
+	    /* tweak for positioning */
+	    margin: 3em;
+	}
+
+	&__tri {
+		$time: 2s;
+
+		animation: fade-tri $time linear infinite;
+	    font-size: 1em;
+		position: absolute;
+	    top: -1em;
+	    left: -1.667em;
+	    width: 0;
+	    height: 0;
+	    border-top: 1em solid transparent;
+	    border-bottom: 1em solid transparent;
+	    border-left: 1.75em solid colour(orange);
+	    transform-origin: 100%;
+
+		$deg: 60deg;
+		$delay: $time / 12;
+
+		@for $i from 0 through 5 {
+
+			&--#{$i + 1} {
+				animation-delay: $i * $delay;
+				transform: rotate(120deg + ($i * $deg));
+			}
+		}
+	}
+}
+
+@keyframes fade-tri {
+    0%      { opacity: 1; }
+    10%     { opacity: 0; }
+    50%     { opacity: 0; }
+    60%     { opacity: 1; }
+    100%    { opacity: 1; }
+}

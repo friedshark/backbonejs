@@ -1,0 +1,31 @@
+---
+title: "Job Listing Item"
+---
+
+<article class="job-listing-item" data-view="jobListingItemView"
+         data-location="{{location}}"
+         data-category="{{category}}">
+    <p class="job-listing-item__date text--small">{{date}}</p>
+    <h1 class="job-listing-item__heading text--large"><a href="#" class="link link--alt">{{title}}</a></h1>
+
+    <div class="grid">
+
+        <div class="grid__item one-whole small--one-quarter push--small--three-quarters">
+
+            <p class="job-listing-item__role">
+                <span class="job-listing-item__location">
+                    <span class="vh">Location </span>{{location}}
+                </span>
+                <span class="job-listing-item__employment-type">
+                    <span class="vh">Employment type </span>{{type}}
+                </span>
+            </p>
+
+        </div>
+
+        <div class="grid__item one-whole small--three-quarters pull--small--one-quarter">
+            <p class="job-listing-item__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit am sed diam nonummy.</p>
+        </div>
+
+    </div>
+</article>

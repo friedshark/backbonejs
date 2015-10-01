@@ -1,0 +1,23 @@
+---
+title: "Testimonial Carousel"
+---
+
+<h2 class="static__sub-heading text--large">Single</h2>
+
+	{{#parseJSON '{"vertical-spacing" : true}'}}
+        {{> _testimonial-carousel-single }}
+    {{/parseJSON}}
+
+<h2 class="static__sub-heading text--large">Skew Single</h2>
+
+{{> _testimonial-carousel-single-skew }}
+
+<h2 class="static__sub-heading text--large">Multiple</h2>
+
+	{{#parseJSON '{"vertical-spacing" : true}'}}
+        {{> _testimonial-carousel-multiple }}
+    {{/parseJSON}}
+
+<h2 class="static__sub-heading text--large">Skew Multiple</h2>
+
+{{> _testimonial-carousel-multiple-skew }}

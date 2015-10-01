@@ -1,0 +1,21 @@
+// grid-slider
+// -------------------------
+
+.grid-slider {
+
+
+    .no-js & {
+        
+        &__items article {
+            padding-left: rem($gutter);
+            padding-right: rem($gutter);
+
+            @include get-layout-spacing(medium-connected, margin-bottom);
+
+            @include respond-to-min(medium) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}

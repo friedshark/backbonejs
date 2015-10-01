@@ -1,0 +1,62 @@
+// testimonial-carousel
+// -------------------------
+
+.testimonial-carousel {
+
+    $root: '.testimonial-carousel';
+
+    position: relative;
+    
+    > .grid {
+        position: relative;
+        z-index: 2;
+    }    
+    
+    &__items {
+        margin: 0;
+        padding: 0;
+        padding-left: rem($gutter);
+        padding-right: rem($gutter);
+        list-style: none;
+
+        @include respond-to-min('medium') {
+            padding: 0;
+        }
+    }
+
+    &__item {
+
+        .no-js & {
+            @include get-layout-spacing(large-connected, margin-bottom);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__quote {
+        margin: 0;    
+        text-align: center;    
+
+        &-text {
+            @include get-layout-spacing(small-connected, margin-bottom);
+            line-height: rem(35px);
+            
+            @include respond-to-min('medium') {
+                padding: get-layout-spacing('small-connected', 'medium') 0;
+                line-height: rem(47px); //specific line-height as per creative
+            }
+        }
+    }
+
+    &__cite {
+        font-style: normal;
+        color: colour(grey, light);
+
+        &-role {
+            display: block;
+            color: colour(grey, lighter);
+        }
+    }
+}

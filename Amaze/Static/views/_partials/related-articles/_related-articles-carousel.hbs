@@ -1,0 +1,47 @@
+
+<section class="related-articles{{#if vertical-spacing }} vsb--large{{/if}}" data-require="views/relatedArticlesCarouselView">
+
+	<div class="site__max-element-width">
+
+		<div class="grid">
+
+			<div class="grid__item small--one-whole medium--six-eighths push--medium--one-eighth large--ten-twelfths push--large--one-twelfth">
+
+				<h1 class="related-articles__heading text--xlarge">Related stories</h1>
+
+                <div class="related-articles__items related-articles__items--multiple grid">
+                    <div class="related-articles__item grid__item medium--one-half large--one-half">
+                        {{#if skew }}
+                        {{#parseJSON '{"disable-triangle" : true}'}}
+                        {{> _article-summary-related-article-item }}
+                        {{/parseJSON}}
+                        {{/if}}
+
+                        {{#unless skew }}
+                        {{#parseJSON '{"disable-triangle" : false}'}}
+                        {{> _article-summary-related-article-item }}
+                        {{/parseJSON}}
+                        {{/unless}}
+                    </div>
+                    <div class="related-articles__item grid__item medium--one-half large--one-half">
+                        {{#if skew }}
+                        {{#parseJSON '{"disable-triangle" : true}'}}
+                        {{> _article-summary-related-article-item }}
+                        {{/parseJSON}}
+                        {{/if}}
+
+                        {{#unless skew }}
+                        {{#parseJSON '{"disable-triangle" : false}'}}
+                        {{> _article-summary-related-article-item }}
+                        {{/parseJSON}}
+                        {{/unless}}
+                    </div>
+                </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>

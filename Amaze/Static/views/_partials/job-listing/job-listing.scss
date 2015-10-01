@@ -1,0 +1,32 @@
+// job-listing
+// -------------------------
+
+.job-listing {
+
+    padding-left: rem($gutter);
+    padding-right: rem($gutter);
+
+    @include respond-to-min('medium') {
+        padding: 0;
+    }
+
+    &__heading {
+        text-align: center;
+        @include get-adjusted-layout-spacing(medium-connected, text--xlarge, padding-bottom);
+    }
+
+    &__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        > article {
+
+            @include get-adjusted-layout-spacing(large-connected, text--base, margin-bottom);
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

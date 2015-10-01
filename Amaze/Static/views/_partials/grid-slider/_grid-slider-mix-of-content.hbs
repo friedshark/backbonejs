@@ -1,0 +1,24 @@
+
+<section class="grid-slider vsb--large" data-require="views/gridSliderView">
+
+    <div class="site__max-element-width" data-clear-class>
+
+        <div class="grid" data-clear-class>
+
+            <div data-clear-class class="grid__item one-whole medium--six-eighths push--medium--one-eighth large--ten-twelfths push--large--one-twelfth">
+
+                <div data-carousel data-clear-class="grid-slider__items" class="grid-slider__items grid">
+                    {{#each gridSlider.items }}
+                    <div class="grid-slider__item grid__item one-whole medium--one-half" data-clear-class>
+                        {{> _article-summary-template this }}
+                    </div>
+                    {{/each}}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,284 @@
+// Angle Carousel
+// -------------------------
+
+.angle-carousel {
+
+    @mixin slide-dimensions() {
+        display: block;
+		height: 100%;
+		width: 100%;
+		min-height: rem(480px);
+
+		@include respond-to-min(medium) {
+			min-height: rem(640px);
+			max-height: rem(768px);
+		}
+    }
+
+	$root: '.angle-carousel';
+
+	position: relative;
+
+	&__slides {
+        display: flex;
+  		flex-wrap: wrap;
+        overflow: hidden;
+        position: relative;
+        user-select: none;
+
+        &--active {
+            @include slide-dimensions;
+        }
+	}
+
+	&__canvas {
+		height: 100%;
+		width: 100%;
+	}
+
+	&__slide {
+		color: colour(grey, base-font);
+        cursor: pointer;
+		display: block;
+        text-align: center;
+		text-decoration: none;
+        transform: translateZ(0);
+        width: 100%;
+
+        img {
+            @extend %fill-image;
+        }
+	}
+
+	&__category {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	&__body {
+		bottom: 15%;
+		left: 0;
+		position: absolute;
+		width: 100%;
+
+		@include respond-to-min(medium) {
+			bottom: 50%;
+			left: 13.5%;
+			transform: translate(0, 50%);
+			width: 50%;
+		}
+	}
+
+	&__controls {
+		list-style: none;
+		padding: 0;
+        width: 100%;
+
+		@include respond-to-min(medium) {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		@include respond-to-max(medium) {
+
+			.js & {
+				bottom: 8%;
+				left: 0;
+				font-size: 0;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+
+	&__control {
+        background: transparent;
+        border: 0;
+        color: colour(grey, base-font);
+		cursor: pointer;
+        display: block;
+        padding: 0;
+		text-align: center;
+        text-decoration: none;
+		position: relative;
+
+		@include respond-to-min(medium) {
+			flex-basis: 33.33%;
+			max-width: 33.33%;
+            padding: rem(30px $gutter 0);
+
+			$marker-size: 30px;
+			$marker-elevation: 15px;
+
+			.js & {
+
+				&:after {
+					bottom: 100%;
+					left: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+					border-color: rgba(colour(white), 0);
+					border-bottom-color: colour(white);
+					border-width: $marker-size;
+					margin-left: 0 - $marker-size;
+					transform: translate(0, $marker-size + $marker-elevation);
+					transition: transform map-get($transitions, angle-carousel);
+				}
+
+				&--selected {
+
+					&:after {
+						transform: translate(0, 0);
+					}
+				}
+
+				&:first-child,
+				&:last-child {
+
+					&:after {
+						margin-bottom: -10px;
+					}
+				}
+			}
+
+        	&:before {
+				content: '';
+				background-color: colour(grey, lightest);
+				height: 100%;
+				height: calc(100% - #{rem(get-layout-spacing(medium-connected, small))});
+				left: 0;
+				position: absolute;
+				top: rem(get-layout-spacing(medium-connected, small));
+				width: 1px;
+			}
+
+			&:hover &,
+			.no-touch &:focus &,
+			.no-touch &:active & {
+
+				&-text--title {
+					color: colour(grey);
+				}
+			}
+
+			&:first-child:before {
+				content: none;
+			}
+		}
+
+		@include respond-to-max(medium) {
+			@include get-layout-spacing(small, margin-top);
+
+			.js & {
+				background-color: colour(white);
+				border-radius: 50%;
+				display: inline-block;
+				height: rem(8px);
+				margin: rem(0 4px);
+				width: rem(8px);
+
+				&--selected {
+					background-color: colour(orange);
+				}
+			}
+		}
+
+		@include respond-to-min(large) {
+        	padding-top: rem(60px);
+
+        	&:before {
+				height: calc(100% - #{rem(get-layout-spacing(medium-connected, medium))});
+				top: rem(get-layout-spacing(medium-connected, medium));
+			}
+		}
+
+		&-text {
+			display: block;
+			position: relative;
+			z-index: 1;
+
+			@include respond-to-max(medium) {
+
+				.js & {
+					display: none;
+				}
+			}
+
+			&--category {
+				text-transform: uppercase;
+				margin-bottom: rem(2px);
+			}
+
+			&--title {
+				color: colour(orange);
+
+				@include respond-to-min(medium) {
+					margin-bottom: rem(20px);
+				}
+			}
+
+			&--caption {
+				color: colour(grey, light);
+				max-width: rem(200px);
+				margin-left: auto;
+				margin-right: auto;
+
+				@include respond-to-min(medium) {
+					margin-bottom: rem(20px);
+				}
+			}
+		}
+	}
+
+	&__pagination {
+		display: none;
+
+		@include respond-to-min(medium) {
+			display: block;
+		}
+	}
+
+	&__direction {
+		background: transparent;
+		border: 0;
+		color: colour(white);
+		padding: 0;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+
+		.icon {
+			font-size: rem(46px);
+		}
+
+		&--prev {
+			left: rem($gutter);
+		}
+
+		&--next {
+			right: rem($gutter);
+		}
+	}
+
+	&__cta {
+		color: colour(white);
+		padding: 0 rem($gutter);
+		text-align: center;
+		width: 100%;
+
+		@include respond-to-min(medium) {
+			text-align: left;
+		}
+
+        &-link {
+            color: colour(white);
+            display: block;
+            text-decoration: none;
+        }
+	}
+}

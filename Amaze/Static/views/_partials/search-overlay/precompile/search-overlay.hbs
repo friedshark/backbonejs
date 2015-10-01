@@ -1,0 +1,30 @@
+<div class="site__max-element-width" role="search">
+
+	<div class="search-results__inner">
+
+		<button type="button" class="searchoverlay__close" data-close>Close</button>
+
+    	<h1 class="searchoverlay__heading">Search</h1>
+
+		<form class="grid grid--center search-results__searchbox searchoverlay__searchbox" action="/SearchPage/GetSearchResult" method="get" data-form>
+
+			<div class="grid__item one-whole">
+				<label for="search" class="text--small searchoverlay__label">Start typing to search</label>
+				<input type="text" class="search-results__searchbox-input searchoverlay__textbox" placeholder="Enter search term" id="search" name="search" data-search />
+
+				<div data-view="views/selectView" class="search-results__filter frm-select-wrap">
+                    <label for="filter" class="vh">Filter results by</label>
+                    <select id="filter" name="filter" class="frm-select" data-filter>
+                        <option value="">Filter results by</option>
+                    </select>
+                    <span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+                </div>
+			</div>
+
+		</form>
+
+		<div class="grid" data-searchresults></div>
+
+	</div>
+
+</div>

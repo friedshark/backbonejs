@@ -1,0 +1,26 @@
+<div class="media__controls media__controls--audio">
+
+    <div class="media__controls-bar">
+
+        <button type="button" class="media__control media__control--discrete {{#if playing}} media__control--hidden{{/if}}" data-control="play">
+            <span class="icon icon--playvideo">
+                <span class="vh">Play</span>
+            </span>
+        </button>
+
+        <button type="button" class="media__control media__control--discrete {{#unless playing}} media__control--hidden{{/unless}}" data-control="pause">
+            <span class="icon icon--pause">
+                <span class="vh">Pause</span>
+            </span>
+        </button>
+
+        <div class="media__control-time vh"><span class="media__time" data-time>{{ time }}</span>/<span class="media__time" data-duration>{{ duration }}</span></div>
+
+        <div class="media__control-track media__control-track--discrete" data-view="MediaControlsSeek">
+            <div class="media__control-track-progress" data-progress></div>
+            <div class="media__control-track-progress media__control-track-progress--seek" data-seek></div>
+        </div>
+
+    </div>
+
+</div>

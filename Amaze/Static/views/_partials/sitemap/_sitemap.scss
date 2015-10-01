@@ -1,0 +1,25 @@
+// Sitemap
+// -------------------------
+
+.sitemap {
+
+	ul {
+    	margin-left: 0;     	
+    	list-style: none;
+   	}
+    
+	&__list {
+
+		> li {
+			@include get-layout-spacing(large-connected, margin-bottom);
+
+			ul a {
+		        color: colour(grey, base-font);
+		    }
+		}
+
+		li ul { 
+	    	padding-left: rem($gutter); 
+	    }
+	}    
+}

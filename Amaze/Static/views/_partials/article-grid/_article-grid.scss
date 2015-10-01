@@ -1,0 +1,71 @@
+// Article Grid
+// ------------------------
+
+.article-grid {
+
+    padding: 0 rem($gutter);
+
+    &__heading {
+        text-align: center;
+        @include responsive-type-size(text--xxlarge);
+        @include get-adjusted-layout-spacing(small-connected, text--xxlarge, padding-bottom);
+    }
+
+    &__content {
+        @include get-layout-spacing(large-connected, margin-bottom);
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: stretch;
+        // Grid layout appearance
+        margin-left: rem(-$gutter);
+
+        .js & {
+            opacity: 0;
+
+            &--show {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__flex-whole,
+    &__flex-half {
+        //flex-grow: 1;
+        //flex-shrink: 1;
+        //flex-basis: 100%;
+        flex: 0 1 100%;
+        align-self: auto;
+        order: 0;
+        // Grid layout appearance
+        padding-left: rem($gutter);
+
+        /*@include respond-to-min(medium) {
+            flex-grow: 0;
+        }*/
+    }
+
+    @include respond-to-min(medium) {
+
+        &__flex-half {
+            //flex-grow: 1;
+            //flex-shrink: 0;
+            //flex-basis: 50%;
+            flex: 1 0 50%;
+            align-self: auto;
+            order: 0;
+
+            max-width: 50%; // Get IE on board
+        }
+    }
+
+    &__show-more,
+    &__pagination {
+        text-align: center;
+    }
+}

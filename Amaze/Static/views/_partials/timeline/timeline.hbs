@@ -1,0 +1,31 @@
+---
+title: "Timeline"
+---
+
+<article data-require="controllers/timelineController" data-urljson="/Static/data/timelineContent.json" class="vsb--large">
+
+    <div data-view="timelineView">
+
+        <div class="timeline-nojs__intro grid__item small--one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+            <h1 class="article__heading text--xxlarge">Our timeline</h1>
+            <h2 class="article__heading text--large">Amaze was born 20 years ago inside the Learning Methods unit at Liverpool John Moores University.</h2>
+            <p class="timeline-nojs__intro-copy">Our founders saw a social and technological revolution on the horizon and began to study the increasingly complex relationship between human behaviour and technology. Understanding that relationship has been our passion ever since, enabling us to work across digital marketing, technology and commerce for some of the world's biggest brands. It's no accident that many of our most successful relationships are also the oldest.</p>
+        </div>
+
+        <article class="grid__item small--one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+            {{#each timelineContent.contentItems}}
+            <section class="timeline-nojs__year">
+                <h1 class="timeline-nojs__heading text--xlarge">{{year}}</h1>
+                {{#each events}}
+                <div class="timeline-nojs__event">
+                    <h2 class="timeline-nojs__event-heading">{{title}}</h2>
+                    <p class="timeline-nojs__event-copy">{{text}}</p>
+                </div>
+                {{/each}}
+            </section>
+            {{/each}}
+        </article>
+
+    </div>
+
+</article>

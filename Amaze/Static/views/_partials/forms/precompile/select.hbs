@@ -1,0 +1,11 @@
+<div class="{{classes}} frm-select--augmented" data-select>
+
+    <button type="button" class="frm-select__toggle" role="combobox" aria-expanded="{{visible}}" aria-controls="{{id}}" data-select-toggle>{{selected.textContent}}</button>
+
+    <ul id="{{id}}" class="frm-select__list{{#if visible}} frm-select__list--visible{{/if}}" role="listbox" aria-hidden="{{#if visible}}false{{else}}true{{/if}}">
+        {{#each options}}
+        <li class="frm-select__list-item" role="presentation"><a href="#" role="option" class="frm-select__list-option{{#is ../selected.value value}} frm-select__list-option--selected{{/is}}" data-value="{{value}}">{{textContent}}</a></li>
+        {{/each}}
+    </ul>
+
+</div>

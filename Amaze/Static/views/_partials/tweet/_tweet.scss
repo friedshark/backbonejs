@@ -1,0 +1,164 @@
+// tweet
+// -------------------------
+
+.tweet {
+	color: colour(white);
+
+	&--flex {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-content: stretch;
+		align-items: stretch;
+
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&--flex & {
+
+		&__bg {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: rem($gutter);
+		}
+
+		&__inner {
+
+			padding: 8% 15%;
+
+			@include respond-to-min(medium) {
+				padding-left: 15%;
+				padding-right: 15%;
+			}
+
+			position: relative;
+			display: flex;
+			width: 100%;
+			align-items: center;
+		}
+
+		&__items {
+			flex: 0 1 auto;
+		}
+
+		&__meta {
+
+			@include respond-to-min(medium) {
+				.js & {
+					position: absolute;
+					bottom: get-layout-spacing(medium-connected, medium);
+					left: 15%;
+					right: 15%;
+				}
+			}
+		}
+	}
+
+	&--cycle & {
+
+		&__inner {
+			min-height: rem(400px);
+		}
+
+		&__item {
+
+			margin-bottom: 0;
+		}
+
+		&__content, &__meta {
+			display: none;
+		}
+	}
+
+	&--footer {
+		min-height: rem(240px);
+
+		@include respond-to-min(medium) {
+			min-height: rem(220px);
+		}
+	}
+
+	&--footer & {
+
+		&__inner {
+			min-height: 0;
+		}
+	}
+
+	&__bg[class*="radial-gradient--light-"] + &__inner {
+		color: colour(grey, base-font);
+	}
+
+	&__item {
+		@include get-layout-spacing(large-connected, margin-bottom);
+
+		&:last-child {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	&__content {
+
+		a {
+			color: colour(white);
+			text-decoration: none;
+
+			@include active {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__tweet {
+		@include get-layout-spacing(small-connected, margin-bottom);
+	}
+
+	&__meta {
+		margin-top: get-layout-spacing(small-connected, small);
+
+		@include respond-to-min(medium) {
+			.js & {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&__reach,
+	&__actions {
+
+		display: block;
+
+		@include respond-to-min(large) {
+			display: inline-block;
+			width: 49%;
+		}
+	}
+
+	&__reach {
+		margin-bottom: rem($gutter-half);
+
+		@include respond-to-min(large) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__actions {
+
+		margin-left: -13px; // value taking into account space within the icon image
+
+		@include respond-to-min(large) {
+			text-align: right;
+			margin-left: 0;
+		}
+
+		&-icon {
+			text-decoration: none;
+			color: inherit;
+			.icon {
+				padding: rem($gutter-half);
+			}
+		}
+	}
+}

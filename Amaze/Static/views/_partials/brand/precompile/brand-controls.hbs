@@ -1,0 +1,75 @@
+<div class="brand__controls-inner">
+
+    <div class="brand__control" data-control="intro">
+
+        <h2>
+            <button type="button" class="brand__control-toggle" aria-controls="intro" aria-expanded="false" data-toggle>Why a living brand?</button>
+        </h2>
+
+        <div id="intro" class="brand__expander" aria-hidden="true" data-expander>
+
+            <div class="brand__expander-inner editorial" data-content>
+
+                {{{intro}}}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="brand__control" data-control="living">
+
+        <h2>
+            <button type="button" class="brand__control-toggle" aria-controls="living" aria-expanded="false" data-toggle>Living Mode</button>
+        </h2>
+
+        <div id="living" class="brand__expander" aria-hidden="true" data-expander>
+
+            <div class="brand__expander-inner editorial" data-content="graphs"></div>
+
+        </div>
+
+    </div>
+
+    {{#if watching}}
+    <div class="brand__control brand__control--media" data-control="watching">
+
+        <h2>
+            <button type="button" class="brand__control-toggle" aria-controls="watching" aria-expanded="false" data-toggle>Watching Mode</button>
+        </h2>
+
+        <div id="watching" class="brand__expander" aria-hidden="true" data-expander>
+
+            <div class="brand__expander-inner editorial" data-content>
+
+                {{{watching}}}
+
+            </div>
+
+        </div>
+
+    </div>
+    {{/if}}
+
+    {{#if listening}}
+    <div class="brand__control brand__control--media" data-control="listening">
+
+        <h2>
+            <button type="button" class="brand__control-toggle" aria-controls="listening" aria-expanded="false" data-toggle>Listening Mode</button>
+        </h2>
+
+        <div id="listening" class="brand__expander" aria-hidden="true" data-expander>
+
+            <div class="brand__expander-inner editorial" data-content>
+
+                {{{listening}}}
+
+            </div>
+
+        </div>
+
+    </div>
+    {{/if}}
+
+</div>

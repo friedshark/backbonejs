@@ -1,0 +1,27 @@
+{
+    "items": [
+        {
+            "type": "News Article",
+            "id": "12",
+            "title": "News Article 12",
+            "date": "18 January 2015",
+            "summary": "A fully integrated digital account, including the launch of a new mobile site.",
+            "url": "http://www.testing.com",
+            "ctaText": "Continue reading",
+            "images": {
+                "default": "http://lorempixel.com/400/225/",
+                "small": "http://lorempixel.com/900/506/",
+                "medium": "http://lorempixel.com/1250/703/",
+                "large": "http://lorempixel.com/1500/844/"
+            },
+            "comments": 123,
+            "showComments": true,
+            "views": 1234,
+            "showViews": true,
+            "types": ["News"],
+            "services": [],
+            "year": 2015,
+            "display": "full"
+        }
+    ]
+}

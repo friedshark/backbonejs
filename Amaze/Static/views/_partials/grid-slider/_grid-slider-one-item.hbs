@@ -1,0 +1,24 @@
+
+<section class="grid-slider vsb--large">
+
+    <div class="site__max-element-width">
+
+        <div class="grid">
+
+            <div class="grid__item one-whole medium--six-eighths push--medium--one-eighth large--ten-twelfths push--large--one-twelfth">
+
+                <div class="grid-slider__items grid">
+                    {{#withBefore gridSlider.items 5 }}
+                    <div class="grid-slider__item grid__item one-whole">
+                        {{> _article-summary-template this }}
+                    </div>
+                    {{/withBefore}}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

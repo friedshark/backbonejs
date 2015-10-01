@@ -1,0 +1,313 @@
+// media
+// -------------------------
+
+.media {
+
+	$ctrl-padding: 20px;
+	$ctrl-dim: 36px;
+
+	transition: padding-top map-get($transitions, header);
+
+	@mixin control-elem {
+		padding: rem(0 8px);
+	}
+
+	@mixin control-button {
+		background: none;
+		border: 0;
+		line-height: 0;
+		position: relative;
+	}
+
+	@mixin control-track {
+		background-color: rgba(colour(white), 0.5);
+		cursor: pointer;
+		position: relative;
+	}
+
+	@mixin control-progress {
+		background-color: colour(orange);
+		left: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&--header {
+
+		&:before {
+			background-color: colour(black);
+			content: '';
+			padding-top: map-get($header-height, small);
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			@include respond-to-min(large) {
+				padding-top: map-get($header-height, large);
+			}
+		}
+	}
+
+	&--expand {
+		background-color: colour(black);
+
+		&.media--header {
+			padding-top: map-get($header-height, small);
+
+			@include respond-to-min(large) {
+				padding-top: map-get($header-height, large);
+			}
+		}
+	}
+
+	&__container {
+		position: relative;
+	}
+
+	&__inner {
+		font-size: 0;
+		width: 100%;
+		white-space: nowrap;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+	}
+
+	&__content {
+		padding-top: 133.333%;
+		position: relative;
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+
+		@include respond-to-min(medium) {
+			padding-top: 80%;
+		}
+
+		@include respond-to-min(large) {
+			padding-top: 48.6%;
+		}
+	}
+
+	&__poster {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	&__player {
+		user-select: none;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		@include active {
+
+			.media__controls {
+				opacity: 1;
+			}
+		}
+
+		&:fullscreen {
+			position: static;
+			transform: none;
+		}
+	}
+
+	&__frame {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	&__controls {
+		color: colour(white);
+
+		&-bar {
+			align-items: center;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+            padding-right: rem($ctrl-padding);
+			width: 100%;
+			z-index: 1;
+
+            &--floating {
+                left: 0;
+                padding: rem($ctrl-padding);
+			    position: absolute;
+			    bottom: 0;
+            }
+		}
+
+        &--auto-hide {
+
+            .no-touch & {
+            	opacity: 0;
+		    	transition: opacity map-get($transitions, video-controls);
+            }
+
+        }
+
+        &--auto-hide & {
+
+        	.no-touch &-bar--floating {
+				opacity: 0;
+				transition: opacity map-get($transitions, video-controls);
+
+				&:before {
+					@include linear-gradient(to top, rgba(colour(black), 0.8) 20%, rgba(colour(black), 0));
+					bottom: rem(-1px);
+					content: '';
+					height: 200%;
+					left: 0;
+					pointer-events: none;
+					position: absolute;
+					width: 100%;
+					z-index: -1;
+				}
+
+				@include active {
+					opacity: 1;
+				}
+        	}
+        }
+
+        &--audio {
+        	max-width: rem(320px);
+        	margin: 0 auto;
+        }
+	}
+
+	&__time {
+		@include responsive-type-size(text--small);
+		display: inline-block;
+		margin: rem(0 5px);
+	}
+
+	&__control {
+		@include control-elem;
+		@include control-button;
+
+		&--hidden {
+			display: none;
+		}
+
+		&-close {
+			@include control-button;
+			position: absolute;
+			right: rem($ctrl-padding);
+			top: rem($ctrl-padding);
+		}
+
+		&-time {
+			@include control-elem;
+		}
+
+		&-track {
+			@include control-elem;
+			@include control-track;
+			height: rem($ctrl-padding);
+			flex-grow: 1;
+
+			&-progress {
+				@include control-progress;
+				height: 100%;
+				top: 0;
+				width: 0;
+
+				&--seek {
+					transition: opacity 0.5s;
+				}
+			}
+
+            &--discrete {
+                height: rem(1px);
+                padding: 0;
+            }
+		}
+
+		&-sound {
+			@include control-elem;
+			position: relative;
+			line-height: 0;
+		}
+
+		&-sound:hover &,
+		&-sound:focus &,
+		&-sound:active & {
+
+			&-volume-wrapper {
+				display: block;
+			}
+		}
+
+		&-volume-wrapper {
+			display: none;
+			height: rem(100px);
+			left: 0;
+			padding: rem(20px 0 10px);
+			position: absolute;
+			bottom: 100%;
+			width: 100%;
+		}
+
+		&-volume {
+			cursor: pointer;
+			text-align: center;
+			height: 100%;
+
+			&-inner {
+				@include control-track;
+				display: inline-block;
+				height: 100%;
+				width: 1px;
+			}
+
+			&-level {
+				@include control-progress;
+				bottom: 0;
+				height: 0;
+				width: 100%;
+
+				&:after {
+					background-color: colour(white);
+					content: '';
+					height: rem(5px);
+					left: 0;
+					position: absolute;
+					top: 0;
+					transform: translate(-50%, -50%);
+					width: rem(15px);
+                    z-index: 2;
+				}
+			}
+		}
+	}
+
+	&__cta {
+		@include get-layout-spacing(small-connected, margin-top);
+	}
+
+	&__text {
+		display: block;
+		color: colour(white);
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 80%;
+		z-index: 2;
+	}
+}

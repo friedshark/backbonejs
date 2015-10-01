@@ -1,0 +1,86 @@
+---
+title: "Buttons"
+---
+
+<div class="static-section">
+
+	<div class="grid">
+		<div class="grid__item small--one-whole medium--one-whole">
+
+			<h2 class="static__sub-heading text--large">Inverted</h2>
+
+			<div class="orange-bg">
+                <button type="button" class="btn btn--square btn--invert">Find out more</button>
+				<br><br>
+				<a class="btn btn--square btn--invert" href="#">Find out more</a>
+			</div>
+
+			<h2 class="static__sub-heading text--large">Default</h2>
+            <button type="button" class="btn btn--square">Find out more</button>
+			<br><br>
+            <button type="button" class="btn btn--square">Ok, I agree</button>
+			<br><br>
+
+			<h2 class="static__sub-heading text--large">Icons</h2>
+            <button type="button" class="btn btn--square btn--square-icon btn--icon"><span class="icon icon--arrow-right"></span>Continue</button>
+			<div class="orange-bg">
+                <button type="button" class="btn btn--square btn--square-icon btn--icon btn--invert"><span class="icon icon--arrow-right"></span>Continue</button>
+			</div>
+
+			<h2 class="static__sub-heading text--large">Select</h2>
+			<div data-require="views/selectView" class="frm-select-wrap">
+                <select id="select" name="select" class="frm-select">
+                    <option value="">Career by category</option>
+                    <option value="Advertising">Advertising</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Development">Development</option>
+                    <option value="Management">Management</option>
+                    <option value="UX">UX</option>
+                </select>
+                <span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+            </div>
+			<br><br>
+
+			<h2 class="static__sub-heading text--large">File Input</h2>
+			<div class="frm-file-wrap" data-require="views/fileView">
+				<input id="file" type="file" name="file" class="frm-file" extension="pdf,doc,docx" data-rule-required="true" />
+			</div>
+			<br><br>
+
+			<h2 class="static__sub-heading text--large">Blurred</h2>
+			<div class="image-bg">
+                <button type="button" class="btn btn--square btn--blurred">All news</button>
+				<br><br>
+				<a class="btn btn--square btn--blurred">All news</a>
+			</div>
+
+			<h2 class="static__sub-heading text--large">Diamond</h2>
+            <button type="button" class="btn btn--diamond"><span class="icon icon--playvideo"></span><span class="vh">Play video of ...</span></button>
+			<div class="orange-bg">
+                <button type="button" class="btn btn--diamond btn--invert"><span class="icon icon--playvideo"></span><span class="vh">Play video of ...</span></button>
+			</div>
+
+			<h2 class="static__sub-heading text--large">Wrapped</h2>
+			<div class="btn-wrap">
+                <button type="button" class="btn btn--diamond"><span class="icon icon--more-content"></span></button>
+				<span class="btn-wrap__text">Read more</span>
+			</div>
+			<br><br>
+
+			{{> _show-more }}
+
+			<div class="orange-bg">
+				<div class="btn-wrap btn-wrap--invert">
+                    <button type="button" class="btn btn--diamond btn--invert"><span class="icon icon--information-alt"></span></button>
+					<span class="btn-wrap__text">Take a look at the cookies used in this site</span>
+				</div>
+			</div>
+
+			<h2 class="static__sub-heading text--large">Share Links</h2>
+
+            {{> _social-share-icons }}
+
+		</div>
+	</div>
+
+</div>

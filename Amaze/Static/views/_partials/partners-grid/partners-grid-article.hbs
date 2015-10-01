@@ -1,0 +1,41 @@
+---
+title: "Partners Grid Article"
+---
+
+<div class="site__max-element-width">
+	<div class="grid">
+        <div class="grid__item one-whole medium--six-eighths push--medium--one-eighth large--eight-twelfths push--large--two-twelfths">
+
+            <article class="article grid-article" data-grid-content>
+
+                <div class="article__pad">
+
+                    <h1 class="text--xxlarge grid-article__heading">
+                        Sitecore
+                        <span class="text--large grid-article__subheading">An overview of what Sitecore is</span>
+                    </h1>
+
+                    <picture class="grid-article__image">
+                        <source media="(min-width: 64rem)" srcset="http://lorempixel.com/1300/674/sports/3">
+                        <source media="(min-width: 40rem)" srcset="http://lorempixel.com/1000/563/sports/2">
+                        <source media="(min-width: 30rem)" srcset="http://lorempixel.com/700/394/sports/1">
+                        <img src="http://lorempixel.com/400/225/sports/4" alt="" />
+                    </picture>
+
+                    <div class="editorial vsb--large-connected">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum a, pariatur, consectetur doloribus ut corporis accusantium iure debitis delectus necessitatibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, fuga quam, earum sapiente quo consequuntur recusandae debitis cumque voluptatem molestiae inventore repellat, necessitatibus similique culpa voluptatibus rem fugiat. Delectus tempora, commodi corrupti ducimus iusto beatae tenetur. Quas quod voluptatem pariatur deserunt dolores necessitatibus, veniam iure ipsum debitis earum, sint illo.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, iure, sequi. Modi nemo soluta, officia est rerum doloribus repudiandae placeat.</p>
+                    </div>
+
+                </div>
+
+                {{#parseJSON '{"expanding-grid" : true}'}}
+                {{> _related-articles-related-content  }}
+                {{/parseJSON}}
+
+            </article>
+
+        </div>
+	</div>
+</div>

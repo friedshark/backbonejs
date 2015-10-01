@@ -1,0 +1,106 @@
+{
+    "showMoreUrl": "/static/data/imageGridPage2.json",
+    "items": [
+        {
+            "layout": "portrait-landscape-landscape",
+            "images": {
+                "portrait": {
+                    "base": "http://lorempixel.com/400/463/transport/1",
+                    "small": "http://lorempixel.com/700/811/transport/2",
+                    "medium": "http://lorempixel.com/1000/1159/transport/4",
+                    "large": "http://lorempixel.com/1300/1506/transport/3",
+                    "altText": "Some alt text"
+                },
+                "landscape-1": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1",
+                    "altText": "Some alt text"
+                },
+                "landscape-2": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1",
+                    "altText": "Some alt text"
+                }
+            }
+        },
+        {
+            "layout": "landscape",
+            "images": {
+                "landscape": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1"
+                }
+            }
+        },
+        {
+            "layout": "landscape-landscape-portrait",
+            "images": {
+                "landscape-1": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1",
+                    "altText": "Some alt text"
+                },
+                "landscape-2": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1",
+                    "altText": "Some alt text"
+                },
+                "portrait": {
+                    "base": "http://lorempixel.com/400/463/transport/1",
+                    "small": "http://lorempixel.com/700/811/transport/2",
+                    "medium": "http://lorempixel.com/1000/1159/transport/4",
+                    "large": "http://lorempixel.com/1300/1506/transport/3",
+                    "altText": "Some alt text"
+                }
+            }
+        },
+        {
+            "layout": "landscape-landscape",
+            "images": {
+                "landscape-1": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1",
+                    "altText": "Some alt text"
+                },
+                "landscape-2": {
+                    "base": "http://lorempixel.com/400/225/business/4",
+                    "small": "http://lorempixel.com/700/394/business/3",
+                    "medium": "http://lorempixel.com/1000/563/business/2",
+                    "large": "http://lorempixel.com/1300/731/business/1",
+                    "altText": "Some alt text"
+                }
+            }
+        },
+        {
+            "layout": "portrait-portrait",
+            "images": {
+                "portrait-1": {
+                    "base": "http://lorempixel.com/400/463/transport/1",
+                    "small": "http://lorempixel.com/700/811/transport/2",
+                    "medium": "http://lorempixel.com/1000/1159/transport/4",
+                    "large": "http://lorempixel.com/1300/1506/transport/3",
+                    "altText": "Some alt text"
+                },
+                "portrait-2": {
+                    "base": "http://lorempixel.com/400/463/transport/1",
+                    "small": "http://lorempixel.com/700/811/transport/2",
+                    "medium": "http://lorempixel.com/1000/1159/transport/4",
+                    "large": "http://lorempixel.com/1300/1506/transport/3",
+                    "altText": "Some alt text"
+                }                
+            }
+        }
+    ]
+}

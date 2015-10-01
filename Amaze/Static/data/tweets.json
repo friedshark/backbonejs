@@ -1,0 +1,70 @@
+{
+    "footer": {
+        "class": "tweet--footer",
+        "tweets": [
+            {
+                "tweet": "RT: <a href=\"#\">@jasperbelluk</a> Decisions decisions - good overview of attribution model fit to retailer <a href=\"#\">@amazeltd</a> <a href=\"#\">#shoporg14</a> <a href=\"#\">#analyticshero</a>",
+                "via": "30mins ago via twitter",
+                "retweets": 4,
+                "favourites": 2
+            },
+            {
+                "tweet": "W  W  W  W  W  W  W  W  W  W  <a href=\"#\">W  W  W  W  W  W  W  W  W  W  </a>W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  ",
+                "via": "55mins ago via twitter",
+                "retweets": 0,
+                "favourites": 0
+            }
+        ]
+    },
+
+    "brand": {
+        "class": "tweet--flex",
+        "theme": "radial-gradient--brand-1 trixel--light",
+        "tweets": [
+            {
+                "tweet": "RT: <a href=\"#\">@jasperbelluk</a> Decisions decisions - good overview of attribution model fit to retailer <a href=\"#\">@amazeltd</a> <a href=\"#\">#shoporg14</a> <a href=\"#\">#analyticshero</a>",
+                "via": "30mins ago via twitter",
+                "retweets": 4,
+                "favourites": 2
+            }
+        ]
+    },
+
+    "dark": {
+        "class": "tweet--flex",
+        "theme": "radial-gradient--dark-1 trixel--light",
+        "tweets": [
+            {
+                "tweet": "RT: <a href=\"#\">@jasperbelluk</a> Decisions decisions - good overview of attribution model fit to retailer <a href=\"#\">@amazeltd</a> <a href=\"#\">#shoporg14</a> <a href=\"#\">#analyticshero</a>",
+                "via": "30mins ago via twitter",
+                "retweets": 4,
+                "favourites": 2
+            },
+            {
+                "tweet": "W  W  W  W  W  W  W  W  W  W  <a href=\"#\">W  W  W  W  W  W  W  W  W  W  </a>W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  ",
+                "via": "55mins ago via twitter",
+                "retweets": 0,
+                "favourites": 0
+            }
+        ]
+    },
+
+    "light": {
+        "class": "tweet--flex",
+        "theme": "radial-gradient--light-1 trixel--dark",
+        "tweets": [
+            {
+                "tweet": "RT: <a href=\"#\">@jasperbelluk</a> Decisions decisions - good overview of attribution model fit to retailer <a href=\"#\">@amazeltd</a> <a href=\"#\">#shoporg14</a> <a href=\"#\">#analyticshero</a>",
+                "via": "30mins ago via twitter",
+                "retweets": 4,
+                "favourites": 2
+            },
+            {
+                "tweet": "W  W  W  W  W  W  W  W  W  W  <a href=\"#\">W  W  W  W  W  W  W  W  W  W  </a>W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  W  ",
+                "via": "55mins ago via twitter",
+                "retweets": 0,
+                "favourites": 0
+            }
+        ]
+    }
+}

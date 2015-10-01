@@ -1,0 +1,92 @@
+// header
+// ------------------------
+
+.header {
+    position: relative;
+    z-index: get-z-index(header);
+
+    &--overlay {
+    	background: rgba(colour(white), 0.9) linear-gradient(to right, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 50%);
+    	left: 0;
+    	position: absolute;
+    	top: 0;
+    	width: 100%;
+    }
+
+    &__max-width {
+        position: relative;
+    }
+
+    &__inner {
+        height: rem(map-get($header-height, small));
+
+        @include respond-to-min(large) {
+            height: rem(map-get($header-height, large));
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: rem(150px);
+        height: rem(150px);
+        position: absolute;
+
+        @include respond-to-min(large) {
+            width: rem(300px);
+            height: rem(300px);
+        }
+
+        &-mark {
+            height: rem(55px);
+            left: rem(24px);
+            position: absolute;
+            top: rem(16px);
+            width: rem(55px);
+
+            @include respond-to-min(large) {
+                width: rem(75px);
+                height: rem(75px);
+                top: rem(30px);
+                left: rem(75px);
+            }
+        }
+    }
+
+    &__avatar {
+
+		&-canvas, &-fallback {
+            display: inline-block;
+            max-width: 100%;
+            pointer-events: none;
+		}
+
+        &-fallback {
+			position: absolute;
+			left: rem(-26px);
+			top: rem(-32px);
+
+			@include respond-to-min(large) {
+				left: rem(-40px);
+				top: rem(-90px);
+			}
+        }
+    }
+
+
+    &__menu {
+        position: absolute;
+        top: 50%;
+        right: rem(20px);
+        margin-top: rem(-15px);
+        color: colour(grey);
+        text-decoration: none;
+
+        @include respond-to-min(large) {
+            display: none;
+        }
+
+        .icon {
+            font-size: rem(32px);
+        }
+    }
+}

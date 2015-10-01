@@ -1,0 +1,42 @@
+---
+title: "Form Contact Selector"
+---
+
+<section class="frm-selector vsb--large" data-require="views/formSelectorView">
+	<div class="site__max-element-width">
+		<div class="grid">
+			<div class="grid__item one-whole">
+				<form method="get" action="/" class="frm-selector__container vsb--large-connected" autocomplete="off">
+
+					<fieldset>
+						<legend class="vh">Contact Form Selector</legend>
+
+						<h1 class="frm-selector__title">Get in touch with our experts</h1>
+						<div data-require="views/selectView" class="frm-select-wrap">
+							<select id="FormType" name="FormType" class="frm-select" data-toggle>
+								<option value="">Let's talk about</option>
+                                <option data-href="form-contact-standard2.html?1" value="New business">New business</option>
+                                <option data-href="form-contact-standard.html?2" value="Media relations">Media relations</option>
+                                <option data-href="form-contact-standard.html?3" value="Partner enquires">Partner enquires</option>
+                                <option data-href="form-contact-vacancy.html?4" value="Apply for vacancy">Apply for vacancy</option>
+                                <option data-href="form-contact-student.html?5" value="Student / research">Student / research</option>
+                                <option data-href="form-contact-standard.html?6" value="General enquiry">General enquiry</option>
+							</select>
+							<span class="frm-select-wrap__icon icon icon--arrow-down"></span>
+						</div>
+
+						<button class="btn btn--square btn--square-icon btn--icon" type="submit" data-submit>
+							<span class="icon icon--arrow-right"></span>
+							Submit
+						</button>
+
+					</fieldset>
+
+				</form>
+				<div class="frm-selector__expander" data-expander>
+					<div class="frm-selector__content" data-content></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

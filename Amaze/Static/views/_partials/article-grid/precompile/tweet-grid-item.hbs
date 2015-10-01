@@ -1,0 +1,27 @@
+
+<article class="tweet tweet--flex{{#is display "half"}} article-grid__flex-half{{/is}}{{#is display "full"}} article-grid__flex-whole{{/is}}"
+         data-id="{{id}}"
+         data-types="tweet"
+         data-services="tweet"
+         data-year="tweet"
+         data-display="half"
+         data-type="Tweet"
+         data-grid-item
+         data-require="views/tweetView"
+         data-tweet-item>
+
+    <div class="tweet__bg {{theme}}"></div>
+
+    <div class="tweet__inner">
+
+        <div class="tweet__items" data-tweet-items>
+
+            {{#each tweets}}
+            {{> _tweet-item-partial this }}
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</article>

@@ -1,0 +1,57 @@
+
+<article class="article-summary">
+
+    <div class="article-summary__image article-summary__image--triangle vsb--small-connected">
+        <a href="{{url}}">
+            <!-- NOTE: Use ImageResizing.NET ?width=XXX -->
+            <!-- Small ~480 -->
+            <!-- Medium ~640 -->
+            <!-- Large ~1024 -->
+            <picture>
+                <source media="(min-width: 64rem)" srcset="{{images.large}}" />
+                <source media="(min-width: 40rem)" srcset="{{images.medium}}" />
+                <source media="(min-width: 30rem)" srcset="{{images.small}}" />
+                <img src="{{images.default}}" alt="" />
+            </picture>
+        </a>
+    </div>
+
+    <div class="article-summary__content article-summary__content--indented{{#is display "full"}} article-summary__content--grid-full-indented{{/is}}">
+        
+        <p class="article-summary__type text--small">
+            {{#is type "News Article"}}
+            News
+            {{/is}}
+            {{#is type "Case Study"}}
+            Case study
+            {{/is}}
+            {{#is type "Blog Article"}}
+            Blog
+            {{/is}}
+        </p>
+
+        <h1 class="article-summary__heading text--xlarge"><a href="{{url}}">{{title}}</a></h1>
+
+        <div class="article-summary__summary editorial">
+            <p>{{summary}}</p>
+        </div>
+
+        <div class="article-summary__onward">
+            <p class="article-summary__onward-cta"><a href="{{url}}">{{ctaText}} <span class="vh">{{title}}</span></a></p>
+
+            {{#and showComments showViews}}
+            <p class="article-summary__onward-icons activity-icons">
+                {{#if showComments}}
+                <span class="activity-icons__comments"><span class="vh">Comments</span><a href="#"><span class="icon icon--comments"></span> {{comments}}</a></span>
+                {{/if}}
+                {{#if showViews}}
+                <span class="activity-icons__views"><span class="vh">Views</span><span class="icon icon--views"></span> {{views}}</span>
+                {{/if}}
+            </p>
+            {{/and}}
+
+        </div>
+
+    </div>
+
+</article>

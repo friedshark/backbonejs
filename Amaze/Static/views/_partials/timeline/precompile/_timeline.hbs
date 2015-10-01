@@ -1,0 +1,57 @@
+<article data-view="timelineView" class="timeline">
+
+    <div id="timeline-container">
+        <div id="hexagon-overlay">
+            <p id="hexagon-overlay-year"></p>
+            <div id="hexagon-overlay-contents">
+                <div id="hexagon-overlay-icon"></div>
+                <p id="hexagon-overlay-description"></p>
+            </div>
+            <div class="modal-controls">
+                <button type="button" id="timeline-arrow-left" class="icon icon--arrow-left modal-controls-icons"><span class="vh">Prev</span></button>
+                <button type="button" id="timeline-arrow-right" class="icon icon--arrow-right modal-controls-icons"><span class="vh">Next</span></button>
+                <span class="modal-controls-spacer"></span>
+                <button type="button" id="hexagon-close-button" class="icon icon--close modal-controls-icons"><span class="vh">Close</span></button>
+            </div>
+        </div>
+    	<div class="timeline-scrollable-content" id="scroll-container">
+    		<div id="hexagon-container">
+    		    <div id="hexagon-shadow-small"></div>
+    		</div>
+    		<div id="hexagon-axis-horizontal">
+    			<div class="key-events-timeline">
+    				<div class="key-event-label hasgrove">Acquired by<br/>Hasgrove</div>
+    				<div class="key-event-label stives">Acquired by<br/>St Ives Group</div>
+    			</div>
+    			<div class="years-timeline">
+    				<div class="year-label h-1995">1995</div>
+    				<div class="year-label h-2000">2000</div>
+    				<div class="year-label h-2005">2005</div>
+    				<div class="year-label h-2010">2010</div>
+    				<div class="year-label h-2015">2015</div>
+    			</div>
+    		</div>
+    		<div id="hexagon-axis-vertical">
+    			<div class="year-label v-1995">1995</div>
+    			<div class="year-label v-2000">2000</div>
+    			<div class="year-label v-2005">2005</div>
+    			<div class="year-label v-2010">2010</div>
+    			<div class="year-label v-2015">2015</div>
+    		</div>
+    	</div>
+    	<div class="timeline-scroll-controls" id="timeline-scroll-controls">
+    		<div class="timeline-scroll-controls__arrow timeline-scroll-controls__arrow--left" id="timeline-scroll-left">
+                <span class="border-arrow border-arrow--left"></span>
+    			<span class="vh">scroll back</span>
+    		</div>
+    		<div class="timeline-scroll-controls__bar-wrapper" id="scroll-bar-wrapper">
+    			<div class="timeline-scroll-controls__bar" id="timeline-scroll-bar"></div>
+    		</div>
+    		<div class="timeline-scroll-controls__arrow timeline-scroll-controls__arrow--right" id="timeline-scroll-right">
+                <span class="border-arrow border-arrow--right"></span>
+    			<span class="vh">scroll forward</span>
+    		</div>
+    	</div>
+	</div>
+
+</article>

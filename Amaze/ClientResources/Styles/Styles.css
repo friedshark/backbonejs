@@ -1,0 +1,61 @@
+﻿@import url("LayoutIcons.css");
+
+.we-list-items {
+    width: 85%;
+    min-width: 500px;
+}
+
+.we-list-items.list-items-dialog {
+    width: 100%;
+}
+
+.we-list-items .dgrid {
+    height: auto;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    border-left: 1px solid #AEAEAE;
+    border-right: 1px solid #AEAEAE;
+    border-bottom: 1px solid #AEAEAE;
+}
+
+.we-list-items .dgrid-scroller {
+    position: inherit;
+    overflow-y: hidden;
+}
+
+.dgrid-cell.dgrid-cell-padding.dgrid-column-up.field-up {
+    width: 4%;
+}
+
+.dgrid-cell.dgrid-cell-padding.dgrid-column-down.field-down {
+    width: 4%;
+}
+
+.dgrid-cell.dgrid-cell-padding.dgrid-column-del.field-del {
+    width: 4%;
+}
+
+.dgrid-cell.dgrid-cell-padding.dgrid-column-tweetid.field-tweetid {
+    width: 12%;
+}
+
+.dgrid-cell.dgrid-cell-padding.Description {
+    width: 20%;
+}
+
+.dgrid-cell.dgrid-cell-padding.field-link {
+    width: 20%;
+}
+
+.dgrid-cell.dgrid-cell-padding.field-createdDate {
+    width: 20%;
+}
+
+.we-list-items td p {
+    word-break: break-all;
+    white-space: normal;
+}
+.Sleek .epi-editorViewport {
+    background: none;
+    background-color: white !important;
+}

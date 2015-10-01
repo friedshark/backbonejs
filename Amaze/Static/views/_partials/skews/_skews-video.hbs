@@ -1,0 +1,17 @@
+<canvas class="skew__canvas skew__canvas--image" data-view="skewImage" data-srcset="/img/_temp/skews-image-small.jpg, /img/_temp/skews-image-medium.jpg 640w, /img/_temp/skews-image-large.jpg 1024w"{{#if angles}} data-angles="{{angles}}"{{/if}}></canvas>
+<noscript>
+	<picture class="skew__fallback">
+		<source media="(min-width: 64rem)"
+			sizes="100w"
+			srcset="/img/_temp/skews-image-large.jpg 1220w, /img/_temp/skews-image-large.jpg 1800w" />
+			{{!-- 1x = 1220 x 583, 1.5x = 1800 x 875  --}}
+		<source media="(min-width: 40rem)"
+			sizes="100w"
+			srcset="/img/_temp/skews-image-medium.jpg 1024w, /img/_temp/skews-image-medium.jpg 1536w" />
+			{{!-- 1x = 1024 x 819, 1.5x = 1536 x 1229 --}}
+		<img class="media__poster" src="/img/_temp/skews-image-large.jpg"
+			sizes="100w"
+			srcset="/img/_temp/skews-image-small.jpg 640w, /img/_temp/skews-image-small.jpg 960w" />
+			{{!-- 1x = 640 x 853, 1.5x = 960 x  1280 --}}
+	</picture>
+</noscript>

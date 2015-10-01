@@ -1,0 +1,70 @@
+﻿/* Styles used by the TinyMCE editor */
+h1 {
+    EditMenuName:Header 1;
+}
+
+h2 {
+    EditMenuName: Header 2;
+}
+
+h3 {
+    EditMenuName: Header 3;
+}
+
+p {
+    EditMenuName: Paragraph;
+}
+
+.text--xxlarge{
+    EditMenuName: XXlarge text;
+}
+
+.text--xlarge{
+    EditMenuName: Xlarge text;
+}
+
+.text--large {
+    EditMenuName: Large text;
+}
+
+.text--small {
+    EditMenuName: Small text;
+}
+
+a.link {
+    EditMenuName: Link underline;
+}
+
+a.link--alt{
+    EditMenuName: Link no underline;
+}
+
+p.lead {
+    EditMenuName: Lead;
+}
+
+.grid-article__text-heading {
+    EditMenuName: Grid article heading;
+}
+
+img.flex-image {
+    EditMenuName: Flex image;
+}
+
+img.fill-image {
+    EditMenuName: Fill image;
+}
+
+/*Block Preview*/
+.alert-info {
+    background-color: #FFF8AA;
+    border-color: #858585;
+    color: #000000;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.header.dim {
+    margin: 2% 0;
+    opacity: 0.3;
+}

@@ -1,0 +1,92 @@
+---
+title: "Forms"
+---
+
+<form class="static__section forms" action="" method="POST">
+
+	<div class="grid__max-element-width">
+		<div class="grid">
+			<div class="grid__item one-whole">
+
+				<h1 class="static__heading text--xlarge">Forms</h1>
+
+				<div class="forms__mobile-phone-wrapper">
+
+					<!-- Form Breadcrumb -->
+					<nav class="forms__breadcrumb">
+						<ol class="forms__breadcrumb-items">
+							<li class="forms__breadcrumb-item"><span class="forms__step-counter text--small">step 01</span> <a href="#about-you" class="forms__step-name text--large forms__step-name--complete">About you</a></li>
+							<li class="forms__breadcrumb-item"><span class="forms__step-counter text--small">step 02</span> <a href="#your-cv" class="forms__step-name text--large">Your CV</a></li>
+							<li class="forms__breadcrumb-item"><span class="forms__step-counter text--small">step 03</span> <a href="#final-points" class="forms__step-name text--large">Final points</a></li>
+						</ol>
+					</nav>
+					<!-- end breadcrumb -->
+
+
+
+
+					<fieldset class="step1 forms__fieldset">
+						<legend class="text--small forms__fieldset--nav-counter">Step 01</legend>
+						<span class="text--xlarge forms__fieldset--nav-name">About You</span>
+
+						<div class="forms__section">
+							<label for="name" class="forms__labels">my name is</label>
+							<input type="text" id="name" class="forms__input-text text--large" placeholder="John Smith">
+						</div>
+						<div class="forms__section">
+							<label for="email" class="forms__labels">my email is</label>
+							<input type="text" id="email" class="forms__input-text text--large" placeholder="jsmith@hotmail.com">
+						</div>
+
+						<div class="forms__section-postcode">
+							<label for="postcode" class="forms__labels">my postcode is</label>
+							<input type="text" id="postcode" class="forms__input-text forms__invalid-text text--large" placeholder="M15 1TA">
+							<span class="forms__invalid">Invalid Postcode</span>
+                            <button type="button" class="continue"><span class="icon icon--arrow-right"></span> Find address</button>
+						</div>
+
+						<div class="forms__section-postcode-fallback">
+							<div class="forms__section">
+								<label for="address1" class="forms__labels forms__text">my address is</label>
+								<input type="text" name="address1" class="forms__input-text forms__text text--large" placeholder="Number One">
+							</div>
+							<div class="forms__section">
+								<label for="address2" class="forms__labels forms__text">address 2</label>
+								<input type="text" name="address2" class="forms__input-text forms__text text--large" placeholder="First Street">
+							</div>
+							<div class="forms__section">
+								<label for="city" class="forms__labels forms__text">city</label>
+								<input type="text" name="city" id="city" class="forms__input-text forms__text text--large" placeholder="Manchester">
+							</div>
+							<div class="forms_section">
+								<label for="postcode" class="forms__labels forms__text">postcode</label>
+								<input type="text" name="postcode" class="forms__input-text forms__text text--large" placeholder="M15 4FN">
+							</div>
+						</div>
+
+
+						<div class="dropdown forms__section">
+							<label for="dropdown-example" class="forms__labels forms__label--dropdown forms__text">Select a number</label>
+							<div class="icon icon--arrow-down btn--dropdown-coloured dropdown-selector">
+								<select id="dropdown-example" name="dropdown-example" class="btn btn--dropdown">
+									<option value="">Please select</option>
+									<option value="one">one</option>
+									<option value="two">two</option>
+									<option value="three">three</option>
+									<option value="four">four</option>
+									<option value="five">five</option>
+								</select>
+							</div>
+						</div>
+						<div class="forms__section-checkbox">
+							<input type="checkbox" id="checkbox">
+							<label for="checkbox" class="icon icon--checkbox forms__checkbox">I confirm that I'll be able to work from the 1 September 2015</label>
+						</div>
+					</fieldset>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</form>
